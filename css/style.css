@@ -30,8 +30,9 @@ body{
     --bg-input:#373737e3;
 
     --bg-blur: blur(20px);
-
     --bg-cursor:#ff6464;
+    --nav-border-b:rgb(83, 83, 83);
+
     --clr-primary:rgb(255, 255, 255);
     --clr-hero:-webkit-linear-gradient(45deg, hsl(333deg, 100%, 52%), #ff8a26);
     
@@ -54,8 +55,9 @@ body{
   --bg-input:#f9f9f9e3;
 
   --bg-blur: blur(20px);
-
   --bg-cursor:#ff6464;
+  --nav-border-b:rgb(255, 255, 255);
+
   --clr-primary:rgb(0, 28, 106);
   --clr-hero:-webkit-linear-gradient(45deg, hsl(333deg, 100%, 52%), #ff8a26);
   
@@ -306,7 +308,7 @@ transition: 0.5s;
    }
    
   .nav-ul li:not(:last-child){
-   border-bottom: solid 0.3px rgb(83, 83, 83);
+   border-bottom: solid 0.3px var(--nav-border-b);
   }
 
   #check:checked~.nav-ul{
