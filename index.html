@@ -175,11 +175,23 @@
                             <img src="img/3d-casual-life-young-man-surrounded-by-gadgets-writing-notes.png" height="270px" alt="">                            
                         </div>
                         <div class="col-md-12 edu-text-align" data-aos="fade-up" data-aos-anchor-placement="top-bottom"  data-aos-duration="3000">
-                            <div class="edu-card"  >
+                            <div class="edu-card"  onclick="rotateelement()">
                                 <div class="row p-0">
                                     <div class="col-md-9">
-                                        <h1>CLASS X</h1>
-                                        <h2>ISLAHIYA PUBLIC SCHOOL - 2017</h2>
+                                        <div class="row">
+                                            <div class="col-md-12 data-visible">
+                                                <span class="bi bi-chevron-down  icon12"></span>
+                                                <div >
+                                                    <h1>CLASS X</h1>
+                                                    <h2>ISLAHIYA PUBLIC SCHOOL - 2017</h2>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col-md-12 mt-4 expand hide">
+                                                <h2>grade : 98%</h2>
+                                                <h2>location: Kottakkal</h2>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="edu-img edu-img-r-1">
@@ -198,10 +210,24 @@
                                             <img src="img/compass.svg" alt=""  data-aos="flip-left" data-aos-duration="1000">
                                         </div>
                                     </div>
-                                    <div class="col-md-9 ">
-                                        <h1>CLASS XII</h1>
-                                        <h2>NATIONAL INSTITUTE OF OPEN SCHOOLING - 2019</h2>
+                                    
+                                    <div class="col-md-9">
+                                        <div class="row">
+                                            <div class="col-md-12 data-visible">
+                                                <div >
+                                                    <h1>CLASS XII</h1>
+                                                    <h2>NATIONAL INSTITUTE OF OPEN SCHOOLING - 2019</h2>
+                                                </div>
+                                                <span class="bi bi-chevron-down  icon12"></span>
+                                                
+                                            </div>
+                                            <div class="col-md-12 mt-4 expand hide">
+                                                <h2>grade : 98%</h2>
+                                                <h2>location: Kottakkal</h2>
+                                            </div>
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -210,8 +236,20 @@
                             <div class="edu-card"  data-aos-duration="1500">
                                 <div class="row p-0">
                                     <div class="col-md-9">
-                                        <h1>DIPLOMA IN COMPUTER ENGINEERING</h1>
-                                        <h2>AKNM GPTC - 2022</h2>
+                                        <div class="row">
+                                            <div class="col-md-12 data-visible">
+                                                <span class="bi bi-chevron-down  icon12"></span>
+                                                <div >
+                                                    <h1>DIPLOMA IN COMPUTER ENGINEERING</h1>
+                                                    <h2>AKNM GPTC - 2022</h2>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col-md-12 mt-4 expand hide">
+                                                <h2>grade : 98%</h2>
+                                                <h2>location: Kottakkal</h2>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="edu-img edu-img-r-2">
@@ -231,8 +269,21 @@
                                         </div>
                                     </div>
                                     <div class="col-md-9 ">
-                                        <h1>DIPLOMA IN WEB  DESIGNING</h1>
-                                        <h2>SKILLZ KOTTAKKAL- 2023</h2>
+                                        <div class="row">
+                                            <div class="col-md-12 data-visible">
+                                                <div >
+                                                    <h1>DIPLOMA IN WEB  DESIGNING</h1>
+                                                    <h2>SKILLZ KOTTAKKAL- 2023</h2>
+                                                </div>
+                                                <span class="bi bi-chevron-down  icon12"></span>
+                                                
+                                            </div>
+                                            <div class="col-md-12 mt-4 expand hide">
+                                                <h2>grade : 98%</h2>
+                                                <h2>location: Kottakkal</h2>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -692,6 +743,12 @@
             "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
         });
       </script>
+       <script type="text/javascript">
+            function rotateelement() {
+                document.querySelector('.icon12').style.transform
+                           = 'rotate(180deg)';
+            }
+        </script>
       
         
     <script src="js/typewriter.js"></script>
@@ -702,6 +759,8 @@
     <script src="js/progress.js"></script>
     <script src="js/cards.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/expand.js"></script>
+
 
 </body>
 </html>

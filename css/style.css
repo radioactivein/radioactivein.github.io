@@ -39,12 +39,14 @@ body{
     --clr-icons:-webkit-linear-gradient(199deg, hsl(182.77deg 100% 59.05% / 99%), #3c49ff);
     --clr-icons-hover:-webkit-linear-gradient(199deg, hsla(211, 100%, 35%, 0.99), #2dffea);
     --clr-social-border:rgba(255, 255, 255, 0.162);
-    --clr-skill-border:rgb(60, 60, 60);
+    --clr-skill-border:rgba(112, 112, 112, 0.645);
     --clr-input-border:rgb(33 33 33 / 80%);
 
     --bg-img1:url(../img/3d-gradient.svg);
+    --bg-skill:url(../img/dark-gradient-education.svg);
+
 }
-:root{
+/* :root{
   --bg-primary:hsl(0, 0%, 100%) !important ;
   --bg-secondary:hsla(209, 100%, 91%, 0.914) ;
   --bg-secondary-1:rgb(33 33 33 / 80%) ;
@@ -60,7 +62,7 @@ body{
   --bg-cursor:#ff6464;
   --nav-border-b:rgb(255, 255, 255);
 
-  --clr-primary:rgb(0, 28, 106);
+  --clr-primary:rgb(0, 17, 65);
   --clr-hero:-webkit-linear-gradient(45deg, hsl(333deg, 100%, 52%), #ff8a26);
   
   --clr-icons:-webkit-linear-gradient(199deg, hsl(182.77deg 100% 59.05% / 99%), #3c49ff);
@@ -70,8 +72,8 @@ body{
   --clr-input-border:rgba(233, 233, 233, 0.8);
 
   --bg-img1:url(../img/3d-gradient.svg);
-  --bg-img1:url(../img/3d-gradient.svg);
-}
+  --bg-skill:url(../img/gradient-less-blur.svg);
+} */
 
 :root{
   /* --bg-secondary:hsl(210deg 100% 92.84% / 73%); */
@@ -178,11 +180,18 @@ ul{
   float: left;
 }
 
+.hide{
+  display: none;
+}
 
+.show{
+  display: block;
+  transition: 1000ms ease-in;
+}
 
-
-
-
+.expand{
+  transition: 50ms ease-in;
+}
 
 
 
@@ -637,7 +646,7 @@ div >.address{
   
   /* background-color: #ffffff9c; */
   background-color: var(--bg-cards);
-  padding: 20px 10px ;
+  padding: 20px 20px ;
   padding-left: 20px;
   border-radius: 26px;
   line-height: 1.5;
@@ -645,6 +654,14 @@ div >.address{
   font-weight: normal;
   box-shadow: 0px 8px 16px -6px rgba(157 0 199 / 15%);
   position: relative;
+  cursor: pointer;
+}
+
+.data-visible{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .edu-img-main{
@@ -714,7 +731,7 @@ div >.address{
 
 
 .skill-container{
-  background-image: url(../img/gradient-less-blur.svg);
+  background-image: var(--bg-skill);
   /* background-image: url("https://images.unsplash.com/photo-1688232542797-c3e762c7e3c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"); */
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -757,7 +774,7 @@ div >.address{
     /* border: 1px solid rgb(255 255 255 / 11%); */
     backdrop-filter:var(--bg-blur);
     /* background-color: --clr-primary; */
-    border:2px solid var(--clr-skill-border);
+    border:1.5px solid var(--clr-skill-border);
 
     border-radius: 21px;
     /* box-shadow: 0 5px 32px rgba(0,0,0,.06); */
