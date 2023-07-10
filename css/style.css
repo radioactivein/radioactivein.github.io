@@ -46,9 +46,9 @@ body{
     --bg-skill:url(../img/dark-gradient-education.svg);
 
 }
-/* :root{
+:root{
   --bg-primary:hsl(0, 0%, 100%) !important ;
-  --bg-secondary:hsla(209, 100%, 91%, 0.914) ;
+  --bg-secondary:hsl(209, 100%, 91%) ;
   --bg-secondary-1:rgb(33 33 33 / 80%) ;
   --bg-cards:rgba(255, 255, 255, 0.61);
   --bg-nav:rgba(255, 255, 255, 0.551);
@@ -73,7 +73,7 @@ body{
 
   --bg-img1:url(../img/3d-gradient.svg);
   --bg-skill:url(../img/gradient-less-blur.svg);
-} */
+}
 
 :root{
   /* --bg-secondary:hsl(210deg 100% 92.84% / 73%); */
@@ -920,7 +920,24 @@ input[type=submit]:focus{
   }
 }
 
+/* ********** map ********* */
+
+.map-container{
+  overflow: hidden;
+  background-color: var(--bg-secondary);
+  border-radius: 30px;
+  padding:0 ;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
 /* ********** footer ********* */
+.footer-border{
+  border: solid 0.5px rgba(200, 200, 200, 0.729);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
 #footer{
   background-image: url(../img/footer-gradient.svg) !important;
   background-repeat: no-repeat;
@@ -930,9 +947,10 @@ input[type=submit]:focus{
 .footer-container{
     background-color: var(--bg-secondary);
     border-radius: 30px;
+    border: solid 0.5px rgba(200, 200, 200, 0.688);
     padding: 25px 10px 10px 10px;
     position: relative;
-    margin-top: 90px !important;
+    margin-top: -50px !important;
 }
 
 #footer h5{
