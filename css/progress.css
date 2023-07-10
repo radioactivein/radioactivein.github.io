@@ -18,7 +18,7 @@
     stroke: url(#gradient);
     stroke-dasharray: 198;
     stroke-dashoffset: 198;
-    animation: dash 10s ease-out forwards;
+    animation: dash 30s ease-out forwards;
   }
   /* body{
     background-image: linear-gradient(#b073ff,#6f00ff);
