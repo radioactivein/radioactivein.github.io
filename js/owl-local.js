@@ -3,8 +3,10 @@ $('.owl-carousel').owlCarousel({
     margin:10,
     nav:true,
     responsiveClass:true,
+    loop:true,
+    center:true,
     autoplay:true,
-    autoplayTimeout:4000,
+    autoplayTimeout:8000,
     info:true,
     responsive:{
         0:{
@@ -13,7 +15,10 @@ $('.owl-carousel').owlCarousel({
         900:{
             items:2
         },
-        1000:{
+        1100:{
+            items:3
+        },
+        1200:{
             items:3
         }
     }

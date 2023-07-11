@@ -39,14 +39,14 @@ body{
     --clr-icons:-webkit-linear-gradient(199deg, hsl(182.77deg 100% 59.05% / 99%), #3c49ff);
     --clr-icons-hover:-webkit-linear-gradient(199deg, hsla(211, 100%, 35%, 0.99), #2dffea);
     --clr-social-border:rgba(255, 255, 255, 0.162);
-    --clr-skill-border:rgba(112, 112, 112, 0.645);
+    --clr-skill-border:rgba(108, 108, 108, 0.645);
     --clr-input-border:rgb(33 33 33 / 80%);
 
     --bg-img1:url(../img/3d-gradient.svg);
     --bg-skill:url(../img/dark-gradient-education.svg);
 
 }
-:root{
+/* :root{
   --bg-primary:hsl(0, 0%, 100%) !important ;
   --bg-secondary:hsl(209, 100%, 91%) ;
   --bg-secondary-1:rgb(33 33 33 / 80%) ;
@@ -66,14 +66,14 @@ body{
   --clr-hero:-webkit-linear-gradient(45deg, hsl(333deg, 100%, 52%), #ff8a26);
   
   --clr-icons:-webkit-linear-gradient(199deg, hsl(182.77deg 100% 59.05% / 99%), #3c49ff);
-  --clr-icons-hover:-webkit-linear-gradient(199deg, hsla(211, 100%, 35%, 0.99), #2dffea);
+  --clr-icons-hover:-webkit-linear-gradient(199deg, hsla(198, 100%, 76%, 0.99), #1a39e9);
   --clr-social-border:rgba(0, 0, 0, 0.162);
   --clr-skill-border:rgba(255, 255, 255, 0.47);
   --clr-input-border:rgba(233, 233, 233, 0.8);
 
   --bg-img1:url(../img/3d-gradient.svg);
   --bg-skill:url(../img/gradient-less-blur.svg);
-}
+} */
 
 :root{
   /* --bg-secondary:hsl(210deg 100% 92.84% / 73%); */
@@ -263,6 +263,11 @@ transition: 0.5s;
   /* margin: 0 20px !important; */
 }
 
+a.active{
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text !important ;
+  background: var(--clr-icons);
+}
 
 .nav-ul a:active{
   /* -webkit-text-fill-color: transparent;
@@ -810,6 +815,21 @@ div >.address{
     position: relative;
 }
 
+.item{
+  height: 200px;
+  border-radius: 8px;
+  border: solid 2px var(--clr-skill-border);
+  background-color: rgb(79, 85, 255);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.item img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
 
 /* *********** Contact ********* */
@@ -933,7 +953,7 @@ input[type=submit]:focus{
 
 /* ********** footer ********* */
 .footer-border{
-  border: solid 0.5px rgba(200, 200, 200, 0.729);
+  border: solid 0.5px rgba(71, 71, 71, 0.729);
   border-radius: 30px;
   overflow: hidden;
 }
@@ -947,7 +967,7 @@ input[type=submit]:focus{
 .footer-container{
     background-color: var(--bg-secondary);
     border-radius: 30px;
-    border: solid 0.5px rgba(200, 200, 200, 0.688);
+    border: solid 0.5px rgba(58, 58, 58, 0.688);
     padding: 25px 10px 10px 10px;
     position: relative;
     margin-top: -50px !important;
