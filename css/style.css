@@ -30,6 +30,7 @@ body{
     --bg-nav-responsive:rgba(0, 0, 0, 0.929);
     --bg-icon:rgba(255, 255, 255, 0.286);
     --bg-profile:#99c2ff;
+    --bg-profile:#d1e9ff84;
     --bg-dark-transparent:rgb(6 6 6 / 29%);
     --bg-input:#373737e3;
 
@@ -515,6 +516,7 @@ a.active{
   background-size: cover;
   height: 450px;
   background-repeat: no-repeat;
+  
   background-color: var(--bg-profile);
   display: flex;
   justify-content: center;
@@ -814,6 +816,7 @@ div >.address{
 /* *********** project ********* */
 
 .project-container{
+
     background-color: var(--bg-secondary);
     border-radius: 30px;
     padding: 40px;
