@@ -4,10 +4,8 @@ $('.owl-carousel').owlCarousel({
     nav:true,
     responsiveClass:true,
     loop:true,
-    center:true,
     autoplay:true,
     autoplayTimeout:8000,
-    info:true,
     responsive:{
         0:{
             items:1
@@ -16,10 +14,13 @@ $('.owl-carousel').owlCarousel({
             items:2
         },
         1100:{
+            items:2
+        },
+        1400:{
             items:3
         },
-        1200:{
-            items:3
+        1600:{
+            items:4
         }
     }
 })
