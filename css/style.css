@@ -30,7 +30,6 @@ body{
     --bg-nav-responsive:rgba(0, 0, 0, 0.929);
     --bg-icon:rgba(255, 255, 255, 0.286);
     --bg-profile:#99c2ff;
-    --bg-profile:#d1e9ff84;
     --bg-dark-transparent:rgb(6 6 6 / 29%);
     --bg-input:#373737e3;
 
@@ -46,12 +45,12 @@ body{
     --clr-social-border:rgba(255, 255, 255, 0.162);
     --clr-skill-border:rgba(108, 108, 108, 0.645);
     --clr-input-border:rgb(33 33 33 / 80%);
-    --clr-footer-border:rgba(62, 62, 62, 0.689);
+
     --bg-img1:url(../img/3d-gradient.svg);
     --bg-skill:url(../img/dark-gradient-education.svg);
 
 }
-:root{
+/* :root{
   --bg-primary:hsl(0, 0%, 100%) !important ;
   --bg-secondary:hsla(209, 100%, 91%, 0.518) ;
   --bg-secondary-1:rgb(33 33 33 / 80%) ;
@@ -75,11 +74,10 @@ body{
   --clr-social-border:rgba(0, 0, 0, 0.162);
   --clr-skill-border:rgba(255, 255, 255, 0.47);
   --clr-input-border:rgba(233, 233, 233, 0.8);
-  --clr-footer-border:#ffff;
 
   --bg-img1:url(../img/3d-gradient.svg);
   --bg-skill:url(../img/gradient-less-blur.svg);
-}
+} */
 
 :root{
   /* --bg-secondary:hsl(210deg 100% 92.84% / 73%); */
@@ -516,7 +514,6 @@ a.active{
   background-size: cover;
   height: 450px;
   background-repeat: no-repeat;
-  
   background-color: var(--bg-profile);
   display: flex;
   justify-content: center;
@@ -816,7 +813,6 @@ div >.address{
 /* *********** project ********* */
 
 .project-container{
-
     background-color: var(--bg-secondary);
     border-radius: 30px;
     padding: 40px;
@@ -826,8 +822,8 @@ div >.address{
 .item{
   height: 250px;
   border-radius: 8px;
-  border: solid 2px var(--clr-skill-border);
-  background-color: rgb(79, 85, 255);
+  /* border: solid 2px var(--clr-skill-border); */
+  /* background-color: rgb(79, 85, 255); */
   -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow: hidden;
@@ -836,7 +832,7 @@ div >.address{
 .item img{
   height: 100%;
   /* width: 100%; */
-  object-fit: cover;
+  object-fit: fill;
   object-position: center;
 }
 
@@ -914,7 +910,7 @@ textarea:hover{
 textarea:focus,
 textarea:focus-visible{
   outline: none;
-  background-color: #9f9f9fbd;
+  background-color: #181818bd;
   border: solid 1px #bc79ff;
 
 }
@@ -977,7 +973,7 @@ input[type=submit]:focus{
 .footer-container{
     background-color: var(--bg-secondary);
     border-radius: 30px;
-    border: solid 0.7px var(--clr-footer-border);
+    border: solid 0.7px rgba(104, 104, 104, 0.689);
     padding: 25px 10px 10px 10px;
     position: relative;
     margin-top: -50px !important;
