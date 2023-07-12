@@ -45,6 +45,7 @@ body{
     --clr-social-border:rgba(255, 255, 255, 0.162);
     --clr-skill-border:rgba(108, 108, 108, 0.645);
     --clr-input-border:rgb(33 33 33 / 80%);
+    --clr-footer-border:rgba(104, 104, 104, 0.689);
 
     --bg-img1:url(../img/3d-gradient.svg);
     --bg-skill:url(../img/dark-gradient-education.svg);
@@ -74,6 +75,7 @@ body{
   --clr-social-border:rgba(0, 0, 0, 0.162);
   --clr-skill-border:rgba(255, 255, 255, 0.47);
   --clr-input-border:rgba(233, 233, 233, 0.8);
+  --clr-footer-border:#ffff;
 
   --bg-img1:url(../img/3d-gradient.svg);
   --bg-skill:url(../img/gradient-less-blur.svg);
@@ -383,7 +385,11 @@ a.active{
   /* *******typewriter********* */
 
 
-
+.blue{
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text !important;
+  background: var(--clr-icons);
+}
 
 .hero-text {
   /* height: 100vh; */
@@ -821,7 +827,7 @@ div >.address{
 
 .item{
   height: 250px;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   /* border: solid 2px var(--clr-skill-border); */
   /* background-color: rgb(79, 85, 255); */
   -webkit-transition: 0.5s;
@@ -973,7 +979,7 @@ input[type=submit]:focus{
 .footer-container{
     background-color: var(--bg-secondary);
     border-radius: 30px;
-    border: solid 0.7px rgba(104, 104, 104, 0.689);
+    border: solid 0.7px var(--clr-footer-border);
     padding: 25px 10px 10px 10px;
     position: relative;
     margin-top: -50px !important;
