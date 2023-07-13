@@ -104,7 +104,7 @@ body{
     padding: 40px 30px;
   }
   .card-icon img{
-    width: 100%;
+    /* width: 100%; */
   }
 }
 @media(max-width:720px){
