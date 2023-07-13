@@ -722,7 +722,7 @@ div >.address{
   align-items: center;
 }
 
-.edu-text-align:nth-child(odd){
+.edu-text-align:nth-child(even){
   text-align: end;
 }
 

@@ -3,6 +3,6 @@ perspective(2500px) rotateY(-100deg)
     backface-visibility: hidden;
     transition-property: transform;
 transition-duration: .4s; pic
-transition-duration: 1s; edu container
+transition-duration: 1s; edu container00000000000
 
     transition-timing-function: ease;
