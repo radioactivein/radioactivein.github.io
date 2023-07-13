@@ -1,43 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="https://codepen.io/z-/pen/a8e37caf2a04602ea5815e5acedab458.js">
+    <link rel="stylesheet" href="css/theme.css">
 
 </head>
-<body>
-    <div class="container">
-        
-                <div class="panel active"
-                style="background-image: url('https://images.unsplash.com/photo-1593013174963-be2185e98a6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1485&q=80');">
-                <h3> Rocky Mountain Sunset</h3>
-            </div>
-            <div class="panel"
-                style="background-image: url('https://images.unsplash.com/photo-1430132594682-16e1185b17c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');">
-                <h3> Arches National Park</h3>
-            </div>
-            <div class="panel"
-                style="background-image: url('https://images.unsplash.com/photo-1594919302470-d531545b4c22?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80');">
-                <h3> Lancaster, PA, USA</h3>
-            </div>
-            <div class="panel"
-                style="background-image: url('https://images.unsplash.com/photo-1558983731-16245204a27d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=869&q=80');">
-                <h3> beautiful beach at Maui</h3>
-            </div>
-            <div class="panel"
-                style="background-image: url('https://images.unsplash.com/photo-1503614472-8c93d56e92ce?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=811&q=80');">
-                <h3>Moraine Lake, Canada</h3>
-            </div>
-           
-    </div>
-     
-     
-     
-    
-    <script src="js/cards.js"></script>
-    <script src="js/jquery.js"></script>
-</body>
+
+    <body>
+        <div class="container">
+          <h1>Theme Switcher</h1>
+          <label id="switch" class="switch">
+                  <input type="checkbox" onchange="toggleTheme()" id="slider">
+                  <span class="slider round"></span>
+              </label>
+          <!-- <button id="switch" onclick="toggleTheme()">Switch</button> -->
+        </div>
+        <script src="js/theme.js"></script>
+
+      </body>
+
+
+
+
 </html>

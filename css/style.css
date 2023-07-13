@@ -22,7 +22,7 @@ body{
 
 
 :root{
-    --bg-primary:hsl(210deg, 30%, 8%) !important ;
+    /* --bg-primary:hsl(210deg, 30%, 8%) !important ;
     --bg-secondary:hsla(210, 21%, 11%, 0.656) ;
     --bg-secondary-1:rgb(33 33 33 / 80%) ;
     --bg-cards:rgba(12, 12, 12, 0.61);
@@ -48,7 +48,7 @@ body{
     --clr-footer-border:rgba(104, 104, 104, 0.689);
 
     --bg-img1:url(../img/3d-gradient.svg);
-    --bg-skill:url(../img/dark-gradient-education.svg);
+    --bg-skill:url(../img/dark-gradient-education.svg); */
 
 }
 /* :root{
@@ -303,6 +303,15 @@ a.active{
 
 .navbtn span{
     color:var() ;
+}
+
+.theme-switcher{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 
@@ -1015,3 +1024,141 @@ input[type=submit]:focus{
 
 
 
+
+.theme-light {
+  --bg-primary:hsl(0, 0%, 100%) !important ;
+  --bg-secondary:hsla(209, 100%, 91%, 0.518) ;
+  --bg-secondary-1:rgb(33 33 33 / 80%) ;
+  --bg-cards:rgba(255, 255, 255, 0.61);
+  --bg-nav:rgba(255, 255, 255, 0.551);
+  --bg-nav-responsive:rgba(255, 255, 255, 0.551);
+  --bg-icon:rgba(0, 0, 0, 0.286);
+  --bg-profile:#99c2ff;
+  --bg-dark-transparent:rgba(255, 255, 255, 0.29);
+  --bg-input:#f9f9f9e3;
+
+  --bg-blur: blur(20px);
+  --bg-cursor:#ff6464;
+  --nav-border-b:rgb(255, 255, 255);
+
+  --clr-primary:rgb(0, 17, 65);
+  --clr-hero:-webkit-linear-gradient(45deg, hsl(333deg, 100%, 52%), #ff8a26);
+  
+  --clr-icons:-webkit-linear-gradient(199deg, hsl(182.77deg 100% 59.05% / 99%), #3c49ff);
+  --clr-icons-hover:-webkit-linear-gradient(199deg, hsla(198, 100%, 76%, 0.99), #1a39e9);
+  --clr-social-border:rgba(0, 0, 0, 0.162);
+  --clr-skill-border:rgba(255, 255, 255, 0.47);
+  --clr-input-border:rgba(233, 233, 233, 0.8);
+  --clr-footer-border:#ffff;
+
+  --bg-img1:url(../img/3d-gradient.svg);
+  --bg-skill:url(../img/gradient-less-blur.svg);
+}
+.theme-dark {
+  --bg-primary:hsl(210deg, 30%, 8%) !important ;
+  --bg-secondary:hsla(210, 21%, 11%, 0.656) ;
+  --bg-secondary-1:rgb(33 33 33 / 80%) ;
+  --bg-cards:rgba(12, 12, 12, 0.61);
+  --bg-nav:rgba(0, 0, 0, 0.551);
+  --bg-nav-responsive:rgba(0, 0, 0, 0.929);
+  --bg-icon:rgba(255, 255, 255, 0.286);
+  --bg-profile:#99c2ff;
+  --bg-dark-transparent:rgb(6 6 6 / 29%);
+  --bg-input:#373737e3;
+
+  --bg-blur: blur(20px);
+  --bg-cursor:#ff6464;
+  --nav-border-b:rgb(33, 33, 33);
+
+  --clr-primary:rgb(255, 255, 255);
+  --clr-hero:-webkit-linear-gradient(45deg, hsl(333deg, 100%, 52%), #ff8a26);
+  
+  --clr-icons:-webkit-linear-gradient(199deg, hsl(182.77deg 100% 59.05% / 99%), #3c49ff);
+  --clr-icons-hover:-webkit-linear-gradient(199deg, hsla(211, 100%, 35%, 0.99), #2dffea);
+  --clr-social-border:rgba(255, 255, 255, 0.162);
+  --clr-skill-border:rgba(108, 108, 108, 0.645);
+  --clr-input-border:rgb(33 33 33 / 80%);
+  --clr-footer-border:rgba(104, 104, 104, 0.689);
+
+  --bg-img1:url(../img/3d-gradient.svg);
+  --bg-skill:url(../img/dark-gradient-education.svg);
+
+
+}
+
+/* ************************************************************** */
+/* ***********************************theme*************************** */
+/* ************************************************************** */
+
+/* The switch - the box around the slider */
+.switch {
+position: relative;
+display: inline-block;
+width: 50px;
+height: 15px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+/* The slider */
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: 0.4s;
+transition: 0.4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 20px;
+width: 20px;
+left: 0px;
+bottom: 4px;
+top: 0;
+bottom: 0;
+margin: auto 0;
+-webkit-transition: 0.4s;
+transition: 0.4s;
+box-shadow: 0 0px 15px #2020203d;
+background: white url('https://i.ibb.co/FxzBYR9/night.png');
+background-repeat: no-repeat;
+background-position: center;
+background-size: fit-content;
+}
+
+input:checked + .slider {
+background-color: #2196f3;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(24px);
+-ms-transform: translateX(18px);
+transform: translateX(18px);
+background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+background-repeat: no-repeat;
+background-position: center;
+}
+
+/* Rounded sliders */
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
