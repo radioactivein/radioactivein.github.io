@@ -3,7 +3,7 @@
 //     if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
 //   };
 
-///nav-bg
+
 
 $(document).ready(function(){
     $(window).scroll(function(){
@@ -21,7 +21,7 @@ $(document).ready(function(){
   })
 
 
-///nav-active 
+// ///nav-active 
 
   $(document).ready(function () {
  
@@ -32,3 +32,5 @@ $(document).ready(function(){
         $(this).addClass('active');
     });
 });
+
+

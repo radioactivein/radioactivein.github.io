@@ -11,7 +11,7 @@
   
   path.grey {
     /* stroke: #2a2a2a; */
-    stroke: #f8f8f847;
+    stroke: var(--bg-path);
   }
   
   path.blue {
@@ -25,10 +25,10 @@
     color: #6f00ff;
     color: #b073ff;
     ;
-  } */
-  /* @keyframes dash {
+  }
+  @keyframes dash {
     to {
-      stroke-dashoffset: 1; /* <---- changed to "1" from "0"  */
-    
+      stroke-dashoffset: 1; /* <---- changed to "1" from "0" 
+    }
 
-  
+   */

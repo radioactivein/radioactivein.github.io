@@ -282,7 +282,11 @@ transition: 0.5s;
   color: #c7c7c7 ;
   /* margin: 0 20px !important; */
 }
-
+.nav-link.active{
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text !important ;
+  background: var(--clr-icons);
+}
 a.active{
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text !important ;
@@ -1109,6 +1113,7 @@ input[type=submit]:focus{
   --bg-dark-transparent:rgba(255, 255, 255, 0.29);
   --bg-input:#f9f9f9e3;
   --bg-input-selected:#dddddde3;
+  --bg-path:#ffefef;
 
 
   --bg-blur: blur(20px);
@@ -1140,6 +1145,7 @@ input[type=submit]:focus{
   --bg-dark-transparent:rgb(6 6 6 / 29%);
   --bg-input:#373737e3;
   --bg-input-selected:#000218e3;
+  --bg-path:#f8f8f847;
 
   --bg-blur: blur(20px);
   --bg-cursor:#ff6464;
