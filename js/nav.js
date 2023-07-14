@@ -23,14 +23,14 @@ $(document).ready(function(){
 
 // ///nav-active 
 
-  $(document).ready(function () {
+//   $(document).ready(function () {
  
-    $('ul.nav-ul li > a')
-            .click(function (e) {
-        $('ul.nav-ul li > a')
-            .removeClass('active');
-        $(this).addClass('active');
-    });
-});
+//     $('ul.nav-ul li > a')
+//             .click(function (e) {
+//         $('ul.nav-ul li > a')
+//             .removeClass('active');
+//         $(this).addClass('active');
+//     });
+// });
 
 
