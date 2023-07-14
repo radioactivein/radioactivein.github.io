@@ -1113,7 +1113,7 @@ input[type=submit]:focus{
   --bg-dark-transparent:rgba(255, 255, 255, 0.29);
   --bg-input:#f9f9f9e3;
   --bg-input-selected:#dddddde3;
-  --bg-path:#ffefef;
+  --bg-path:#ffffff;
 
 
   --bg-blur: blur(20px);
