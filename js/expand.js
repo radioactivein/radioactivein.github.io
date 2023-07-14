@@ -6,13 +6,14 @@ $('.edu-card').click(function() {
   function clickToExapndCards($obj){
     var clickedElement = $obj;
     if (clickedElement.hasClass('expanded')) {
-      clickedElement.find('.expand').hide('slow');
+      clickedElement.find('.expand').hide('.5s');
       clickedElement.removeClass('expanded');
-      clickedElement.find('.icon12').style.transform='rotate(90deg)';
+      
     } else {
-       clickedElement.find('.expand').show('slow');
+       clickedElement.find('.expand').show('.5s');
       clickedElement.addClass('expanded');
     }
     
   };
+
 

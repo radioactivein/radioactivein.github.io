@@ -679,6 +679,7 @@ div >.address{
 
 }
 /* ********* Education ********* */
+
 .education-container{
     background-color: var(--bg-secondary);
     border-radius: 30px;
@@ -687,7 +688,7 @@ div >.address{
 }
 #education{
   padding: 30px 0;
-  /* background-image: url("../img/dark-gradient-education.svg"); */
+  background-image: url("../img/dark-gradient-education.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -722,9 +723,9 @@ div >.address{
 }
 
 .data-visible{
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -772,9 +773,30 @@ div >.address{
 }
 
 .edu-text-align:nth-child(even){
-  text-align: end;
+  /* text-align: end; */
 }
 
+.arrow-hidden{
+  display: none !important;
+}
+
+
+.rotate {
+ 
+  -moz-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.rotate.down {
+  -moz-transform:rotate(180deg) !important;
+  -webkit-transform:rotate(180deg) !important;
+  transform:rotate(180deg) !important;
+}
+
+.icon-12{
+  display: flex;
+  justify-content: center;
+}
 
 @media(max-width:768px){
   .edu-text-align:nth-child(odd),
@@ -787,6 +809,16 @@ div >.address{
     margin: auto !important;
     top: auto !important;
     padding: auto !important;
+  }
+
+  .arrow{
+    display: none !important;
+  }
+  .arrow-hidden{
+    display: block !important;
+  }
+  .icon12{
+    margin-top:15px !important;
   }
 }
 
@@ -965,7 +997,7 @@ textarea:hover{
 textarea:focus,
 textarea:focus-visible{
   outline: none;
-  background-color: #181818bd;
+  background-color: var(--bg-input-selected);
   border: solid 1px #bc79ff;
 
 }
@@ -1076,6 +1108,8 @@ input[type=submit]:focus{
   --bg-profile:#99c2ff;
   --bg-dark-transparent:rgba(255, 255, 255, 0.29);
   --bg-input:#f9f9f9e3;
+  --bg-input-selected:#dddddde3;
+
 
   --bg-blur: blur(20px);
   --bg-cursor:#ff6464;
@@ -1105,6 +1139,7 @@ input[type=submit]:focus{
   --bg-profile:#99c2ff;
   --bg-dark-transparent:rgb(6 6 6 / 29%);
   --bg-input:#373737e3;
+  --bg-input-selected:#000218e3;
 
   --bg-blur: blur(20px);
   --bg-cursor:#ff6464;
@@ -1119,6 +1154,8 @@ input[type=submit]:focus{
   --clr-skill-border:rgba(108, 108, 108, 0.645);
   --clr-input-border:rgb(33 33 33 / 80%);
   --clr-footer-border:rgba(104, 104, 104, 0.689);
+
+
 
   --bg-img1:url(../img/3d-gradient.svg);
   --bg-skill:url(../img/dark-gradient-education.svg);
