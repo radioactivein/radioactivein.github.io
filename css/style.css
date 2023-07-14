@@ -125,13 +125,21 @@ body{
 
 @media(min-width:1100px){
   .wrap{
-    padding: 0 170px !important;
+    padding: 0 100px !important;
   }
   .content-wrap{
     padding: 40px 100px !important;
   }
 }
 
+@media(min-width:1300px){
+  .wrap{
+    padding: 0 170px !important;
+  }
+  .content-wrap{
+    padding: 40px 120px !important;
+  }
+}
 
 
 
@@ -344,6 +352,10 @@ a.active{
   }
   .navbtn{
     display: flex !important;
+  } 
+
+  .nav-close-bt{
+    display: none;
   }
 
   .nav-ul{
@@ -377,6 +389,14 @@ a.active{
     left: 0;
 
   }
+
+  #check:checked~.nav-close-bt{
+    display: block !important;
+
+  } #check:checked~.nav-open-bt{
+    display: none !important;
+  }
+
 
  
   div:has(.navbtn){
