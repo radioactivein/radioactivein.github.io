@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
         rotateElements.forEach(function(rotateElement) {
           rotateElement.classList.toggle('down');
-          rotateElement.classList.toggle('up');
+        //   rotateElement.classList.toggle('up');
         });
       });
     });

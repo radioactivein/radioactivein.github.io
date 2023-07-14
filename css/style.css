@@ -815,7 +815,7 @@ div >.address{
     display: none !important;
   }
   .arrow-hidden{
-    display: block !important;
+    display: flex !important;
   }
   .icon12{
     margin-top:15px !important;
