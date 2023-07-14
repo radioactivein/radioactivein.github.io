@@ -287,11 +287,11 @@ transition: 0.5s;
   -webkit-background-clip: text !important ;
   background: var(--clr-icons);
 }
-a.active{
+/* a.active{
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text !important ;
   background: var(--clr-icons);
-}
+} */
 
 .nav-ul a:active{
   /* -webkit-text-fill-color: transparent;
