@@ -1103,7 +1103,7 @@ input[type=submit]:focus{
   --bg-secondary-1:rgb(33 33 33 / 80%) ;
   --bg-cards:rgba(255, 255, 255, 0.61);
   --bg-nav:rgba(255, 255, 255, 0.551);
-  --bg-nav-responsive:rgba(255, 255, 255, 0.551);
+  --bg-nav-responsive:rgba(255, 255, 255, 0.948);
   --bg-icon:rgba(0, 0, 0, 0.286);
   --bg-profile:#99c2ff;
   --bg-dark-transparent:rgba(255, 255, 255, 0.29);
@@ -1134,7 +1134,7 @@ input[type=submit]:focus{
   --bg-secondary-1:rgb(33 33 33 / 80%) ;
   --bg-cards:rgba(12, 12, 12, 0.61);
   --bg-nav:rgba(0, 0, 0, 0.551);
-  --bg-nav-responsive:rgba(0, 0, 0, 0.929);
+  --bg-nav-responsive:rgba(0, 0, 0, 0.966);
   --bg-icon:rgba(255, 255, 255, 0.286);
   --bg-profile:#99c2ff;
   --bg-dark-transparent:rgb(6 6 6 / 29%);
