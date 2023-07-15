@@ -9,7 +9,7 @@ $name= $_POST['message'];
 $to="dashlite.kt@gmail.com";
 $subject = "Mail from fans";
 $txt="Name=".$name."\r\n phone =".$phone."\r\n message =".$message;
-$headers = "From:".$email."\r\n" .
+$headers = "From:dashlite.kt@gmail.com".$email."\r\n" .
 "CC: dashlite.kt@gmail.com";
 if($email!=NULL){
     mail($to,$subject,$text,$headers);
