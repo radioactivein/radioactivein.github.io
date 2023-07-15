@@ -6,11 +6,11 @@ $name= $_POST['phone'];
 // $name= $_POST['subject'];
 $name= $_POST['message'];
 
-$to="ameenbaasim@outlook.com";
+$to="dashlite.kt@gmail.com";
 $subject = "Mail from fans";
-$txt="Name=".$name."\r\n Email =". $email ."\r\n phone =".$phone."\r\n message =".$message;
-$headers = "From: ameenbaasim@outlook.com"."\r\n" .
-"CC: ameennbaasim@outlook.com";
+$txt="Name=".$name."\r\n phone =".$phone."\r\n message =".$message;
+$headers = "From:".$email."\r\n" .
+"CC: dashlite.kt@gmail.com";
 if($email!=NULL){
     mail($to,$subject,$text,$headers);
 }

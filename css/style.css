@@ -1000,7 +1000,7 @@ div >.address{
   /* background-color: #3e3e3e; */
 
   background-color: var(--bg-primary);
-  color: #ffffff;
+  color: var(--clr-input);
 
   border-radius: 10px;
   width: 100%;
@@ -1129,8 +1129,8 @@ input[type=submit]:focus{
   --bg-icon:rgba(0, 0, 0, 0.286);
   --bg-profile:#99c2ff;
   --bg-dark-transparent:rgba(255, 255, 255, 0.29);
-  --bg-input:#f9f9f9e3;
-  --bg-input-selected:#dddddde3;
+  --bg-input:#3c1c86e3;
+  --bg-input-selected:#ffffffe3;
   --bg-path:#ffffff;
 
 
@@ -1146,18 +1146,12 @@ input[type=submit]:focus{
   --clr-social-border:rgba(0, 0, 0, 0.162);
   --clr-skill-border:rgba(255, 255, 255, 0.47);
   --clr-input-border:rgba(233, 233, 233, 0.8);
+  --clr-input:rgb(0, 0, 0);
   --clr-footer-border:#ffff;
 
   --bg-img1:url(../img/3d-gradient.svg);
   --bg-skill:url(../img/gradient-less-blur.svg);
 
-  --icon-html: url(../img/icon/Subtracthtml-light.svg);
-  --icon-css: url(../img/icon/Groupcss-light.svg);
-  --icon-js: url(../img/icon/Vectorjs-light.svg);
-  --icon-jq: url(../img/icon/Groupjq-light.svg);
-  --icon-figma: url(../img/icon/Group\ 145fligma-light.svg);
-  --icon-ai: url(../img/icon/Groupai-light.svg);
-  --icon-ps: url(../img/icon/ps-light.svg);
 
 }
 .theme-dark {
@@ -1186,25 +1180,20 @@ input[type=submit]:focus{
   --clr-social-border:rgba(255, 255, 255, 0.162);
   --clr-skill-border:rgba(108, 108, 108, 0.645);
   --clr-input-border:rgb(33 33 33 / 80%);
+  --clr-input:rgb(255, 255, 255);
   --clr-footer-border:rgba(104, 104, 104, 0.689);
 
   --bg-img1:url(../img/3d-gradient.svg);
   --bg-skill:url(../img/dark-gradient-education.svg);
 
-  --icon-html: url(../img/icon/Subtracthtmls-dark.svg);
-  --icon-css: url(../img/icon/Groupcss-dark.svg);
-  --icon-js: url(../img/icon/Vectorjs-dark.svg);
-  --icon-jq: url(../img/icon/Groupjq-dark.svg);
-  --icon-figma: url(../img/icon/Group\ 145fligma-dark.svg.svg);
-  --icon-ai: url(../img/icon/Groupai-dark.svg);
-  --icon-ps: url(../img/icon/Excludeps-dark.svg);
+ 
 
 
 }
 
-/* ************************************************************** */
-/* ***********************************theme*************************** */
-/* ************************************************************** */
+/* *********** ******/
+/* ********theme***** */
+/* ********** ******/
 
 /* The switch - the box around the slider */
 .switch {
@@ -1265,7 +1254,7 @@ input:checked + .slider:before {
 -webkit-transform: translateX(24px);
 -ms-transform: translateX(18px);
 transform: translateX(18px);
-background: rgb(255, 255, 255) url('https://icons8.com/icon/8LM7-CYX4BPD/sun');
+background: rgb(255, 255, 255) url('https://i.ibb.co/7JfqXxB/sunny.png');
 background-repeat: no-repeat;
 background-position: center;
 background-size: fit-content;
