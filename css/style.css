@@ -843,7 +843,7 @@ div >.address{
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
-  background-size:80% ;
+  background-size:100% ;
   min-height: 450px;
 
     /* height: fit-content;
@@ -1076,6 +1076,7 @@ input[type=submit]:focus{
   background-image: url(../img/footer-gradient.svg) !important;
   background-repeat: no-repeat;
   background-position: bottom,center;
+  background-size: cover;
 }
 
 
