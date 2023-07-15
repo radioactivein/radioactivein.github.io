@@ -83,6 +83,7 @@ body{
 
 :root{
   /* --bg-secondary:hsl(210deg 100% 92.84% / 73%); */
+
 }
 .wrap{
   padding:0 20px ;
@@ -698,7 +699,7 @@ div >.address{
 }
 #education{
   padding: 30px 0;
-  background-image: url("../img/dark-gradient-education.svg");
+  /* background-image: url("../img/dark-gradient-education.svg"); */
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -904,6 +905,12 @@ div >.address{
   right: 50%;
   transform: translate(50%,-50%);
   padding: 10px;
+}
+.invert-img{
+  filter: invert(1);
+}
+#modeimg{
+
 }
 
 @media(max-width:768px){
@@ -1143,6 +1150,15 @@ input[type=submit]:focus{
 
   --bg-img1:url(../img/3d-gradient.svg);
   --bg-skill:url(../img/gradient-less-blur.svg);
+
+  --icon-html: url(../img/icon/Subtracthtml-light.svg);
+  --icon-css: url(../img/icon/Groupcss-light.svg);
+  --icon-js: url(../img/icon/Vectorjs-light.svg);
+  --icon-jq: url(../img/icon/Groupjq-light.svg);
+  --icon-figma: url(../img/icon/Group\ 145fligma-light.svg);
+  --icon-ai: url(../img/icon/Groupai-light.svg);
+  --icon-ps: url(../img/icon/ps-light.svg);
+
 }
 .theme-dark {
   --bg-primary:hsl(210deg, 30%, 8%) !important ;
@@ -1172,10 +1188,16 @@ input[type=submit]:focus{
   --clr-input-border:rgb(33 33 33 / 80%);
   --clr-footer-border:rgba(104, 104, 104, 0.689);
 
-
-
   --bg-img1:url(../img/3d-gradient.svg);
   --bg-skill:url(../img/dark-gradient-education.svg);
+
+  --icon-html: url(../img/icon/Subtracthtmls-dark.svg);
+  --icon-css: url(../img/icon/Groupcss-dark.svg);
+  --icon-js: url(../img/icon/Vectorjs-dark.svg);
+  --icon-jq: url(../img/icon/Groupjq-dark.svg);
+  --icon-figma: url(../img/icon/Group\ 145fligma-dark.svg.svg);
+  --icon-ai: url(../img/icon/Groupai-dark.svg);
+  --icon-ps: url(../img/icon/Excludeps-dark.svg);
 
 
 }

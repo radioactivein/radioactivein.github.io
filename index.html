@@ -378,7 +378,7 @@
                                     </div>
                                 </div>
                                 <div class="card-icon"> 
-                                    <img src="img/icon/Subtracthtml-light.svg" width="60%" alt=""> 
+                                    <img id="modeimg" src="img/icon/Subtracthtml-light.svg" width="60%" alt=""> 
                                 </div>
                                 <div class="card-info"> 
                                     <p>Html</p> 
@@ -403,7 +403,7 @@
                                     </div>
                                 </div>
                                 <div class="card-icon"> 
-                                    <img src="img/icon/Groupcss-light.svg" width="60%" alt=""> 
+                                    <img id="modeimg"  src="img/icon/Groupcss-light.svg" width="60%" alt=""> 
                                 </div>
                                 <div class="card-info"> 
                                     <p>Css</p> 
@@ -428,7 +428,7 @@
                                     </div>
                                 </div>
                                 <div class="card-icon"> 
-                                    <img src="img/icon/Vectorjs-light.svg" width="60%" alt=""> 
+                                    <img id="modeimg" src="img/icon/Vectorjs-light.svg" width="60%" alt=""> 
                                 </div>
                                 <div class="card-info"> 
                                     <p>JavaScript</p> 
@@ -453,7 +453,7 @@
                                     </div>
                                 </div>
                                 <div class="card-icon"> 
-                                    <img src="img/icon/Groupjq-light.svg" width="60%" alt=""> 
+                                    <img id="modeimg" src="img/icon/Groupjq-light.svg" width="60%" alt=""> 
                                 </div>
                                 <div class="card-info"> 
                                     <p>JQuery</p> 
@@ -478,7 +478,7 @@
                                     </div>
                                 </div>
                                 <div class="card-icon"> 
-                                    <img src="img/icon/ps-light.svg" width="60%" alt=""> 
+                                    <img id="modeimg" src="img/icon/ps-light.svg" width="60%" alt=""> 
                                 </div>
                                 <div class="card-info"> 
                                     <p>Photshop</p> 
@@ -503,7 +503,7 @@
                                     </div>
                                 </div>
                                 <div class="card-icon"> 
-                                    <img src="img/icon/Groupai-light.svg" width="60%" alt=""> 
+                                    <img id="modeimg" src="img/icon/Groupai-light.svg" width="60%" alt=""> 
                                 </div>
                                 <div class="card-info"> 
                                     <p>Illustrator</p> 
@@ -528,7 +528,7 @@
                                     </div>
                                 </div>
                                 <div class="card-icon"> 
-                                    <img src="img/icon/Group 145fligma-light.svg" width="60%" alt=""> 
+                                    <img id="modeimg" src="img/icon/Group 145fligma-light.svg" width="60%" alt=""> 
                                 </div>
                                 <div class="card-info"> 
                                     <p>Figma</p> 
@@ -624,20 +624,20 @@
 
                 <div class="col-md-6 p-0" data-aos="flip-down" data-aos-duration="1700">
                     <div class="form contact-container cc-eb">
-                        <form action="form">
+                        <form action="js/mail.php" method="POST" >
                             <div class="row px-2 py-2  ">
                                 
                                 <div class="col-md-12 ">
-                                    <input type="text" class="input" placeholder="Full Name" name="name" id="">
+                                    <input type="text" class="input" placeholder="Full Name" name="name" id="" required>
                                 </div>
                                 <div class="col-md-6 ">
-                                    <input type="text" class="input" placeholder="Email" name="email" id="">
+                                    <input type="text" class="input" placeholder="Email" name="email" id="" required>
                                 </div>
                                 <div class="col-md-6 ">
                                     <input type="tel" class="input" id="phone" name="phone" placeholder="Phone" pattern="[0-9]{2}[0-9]{4}[0-9]{4}" required>
                                 </div>
                                 <div class="col-md-12">
-                                    <textarea  name="" class="input" placeholder="message" id="" cols="10" rows="3"></textarea>
+                                    <textarea  name="message" class="input" placeholder="message" id="" cols="10" rows="3" required></textarea>
                                 </div>
                                 <div class="col-md-4  m-auto py-0">
                                     <input type="submit" value="Send">
