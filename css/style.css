@@ -458,6 +458,14 @@ a.active{
   align-items: start;
   flex-direction: column;
 }
+
+@media(min-width:768px){
+
+  .hero-text{
+    padding-top: 50px;
+  }
+}
+
 .hero-text p {
   font-size: 3rem;
   padding: 0.5rem;
