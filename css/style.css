@@ -894,6 +894,7 @@ div >.address{
     color: var(--clr-primary);
     font-size: 20px;
     line-height: 23px;
+    font-family:'JetBrains Mono','Monospace';
 }
 
 .card-icon{
@@ -905,7 +906,11 @@ div >.address{
   padding: 10px;
 }
 
-
+@media(max-width:768px){
+  .skill-card-content{
+    font-size: 13px;
+  }
+}
 
 /* *********** project ********* */
 

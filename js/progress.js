@@ -38,7 +38,7 @@ const observer = new IntersectionObserver((entries, observer) => {
   });
 
   // Select the section element
-  const section = document.querySelector('#progress');
+  const section = document.querySelector('#progress1');
 
   // Start observing the section
   observer.observe(section);
@@ -61,10 +61,10 @@ const observer = new IntersectionObserver((entries, observer) => {
     $('#progress4').find('#blue').animate({'stroke-dashoffset': 198 * progress1}, 2600);
 
     var progress1 = 0.1 //ai
-    $('#progress5').find('#blue').animate({'stroke-dashoffset': 198 * progress1}, 3000);
+    $('#progress5').find('#blue').animate({'stroke-dashoffset': 198 * progress1}, 3700);
 
     var progress1 = 0.2 //figma
-    $('#progress6').find('#blue').animate({'stroke-dashoffset': 198 * progress1}, 3300);
+    $('#progress6').find('#blue').animate({'stroke-dashoffset': 198 * progress1}, 3600);
 
     var progress1 = 0.5
     $('#progress7').find('#blue').animate({'stroke-dashoffset': 198 * progress1}, 3300);    
