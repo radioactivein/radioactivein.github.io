@@ -16,84 +16,16 @@ body{
   html{
     scroll-behavior: smooth;
   }
-    
-
-    
-
-
-:root{
-    /* --bg-primary:hsl(210deg, 30%, 8%) !important ;
-    --bg-secondary:hsla(210, 21%, 11%, 0.656) ;
-    --bg-secondary-1:rgb(33 33 33 / 80%) ;
-    --bg-cards:rgba(12, 12, 12, 0.61);
-    --bg-nav:rgba(0, 0, 0, 0.551);
-    --bg-nav-responsive:rgba(0, 0, 0, 0.929);
-    --bg-icon:rgba(255, 255, 255, 0.286);
-    --bg-profile:#99c2ff;
-    --bg-dark-transparent:rgb(6 6 6 / 29%);
-    --bg-input:#373737e3;
-
-    --bg-blur: blur(20px);
-    --bg-cursor:#ff6464;
-    --nav-border-b:rgb(33, 33, 33);
-
-    --clr-primary:rgb(255, 255, 255);
-    --clr-hero:-webkit-linear-gradient(45deg, hsl(333deg, 100%, 52%), #ff8a26);
-    
-    --clr-icons:-webkit-linear-gradient(199deg, hsl(182.77deg 100% 59.05% / 99%), #3c49ff);
-    --clr-icons-hover:-webkit-linear-gradient(199deg, hsla(211, 100%, 35%, 0.99), #2dffea);
-    --clr-social-border:rgba(255, 255, 255, 0.162);
-    --clr-skill-border:rgba(108, 108, 108, 0.645);
-    --clr-input-border:rgb(33 33 33 / 80%);
-    --clr-footer-border:rgba(104, 104, 104, 0.689);
-
-    --bg-img1:url(../img/3d-gradient.svg);
-    --bg-skill:url(../img/dark-gradient-education.svg); */
-
-}
-/* :root{
-  --bg-primary:hsl(0, 0%, 100%) !important ;
-  --bg-secondary:hsla(209, 100%, 91%, 0.518) ;
-  --bg-secondary-1:rgb(33 33 33 / 80%) ;
-  --bg-cards:rgba(255, 255, 255, 0.61);
-  --bg-nav:rgba(255, 255, 255, 0.551);
-  --bg-nav-responsive:rgba(255, 255, 255, 0.551);
-  --bg-icon:rgba(0, 0, 0, 0.286);
-  --bg-profile:#99c2ff;
-  --bg-dark-transparent:rgba(255, 255, 255, 0.29);
-  --bg-input:#f9f9f9e3;
-
-  --bg-blur: blur(20px);
-  --bg-cursor:#ff6464;
-  --nav-border-b:rgb(255, 255, 255);
-
-  --clr-primary:rgb(0, 17, 65);
-  --clr-hero:-webkit-linear-gradient(45deg, hsl(333deg, 100%, 52%), #ff8a26);
-  
-  --clr-icons:-webkit-linear-gradient(199deg, hsl(182.77deg 100% 59.05% / 99%), #3c49ff);
-  --clr-icons-hover:-webkit-linear-gradient(199deg, hsla(198, 100%, 76%, 0.99), #1a39e9);
-  --clr-social-border:rgba(0, 0, 0, 0.162);
-  --clr-skill-border:rgba(255, 255, 255, 0.47);
-  --clr-input-border:rgba(233, 233, 233, 0.8);
-  --clr-footer-border:#ffff;
-
-  --bg-img1:url(../img/3d-gradient.svg);
-  --bg-skill:url(../img/gradient-less-blur.svg);
-} */
-
 :root{
   /* --bg-secondary:hsl(210deg 100% 92.84% / 73%); */
 
 }
 .wrap{
   padding:0 20px ;
-    
 }
 .content-wrap{
   padding: 40px 20px ;
 }
-
-
 #home,#about,#education,#projects,#contact,#footer{
   overflow: hidden !important ;
 }
