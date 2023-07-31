@@ -520,8 +520,9 @@ a.active{
   background-size: cover;
   height: 450px;
   background-repeat: no-repeat;
-  background-color: var(--bg-profile);
+  background-color: var(--bg-secondary);
   display: flex;
+  filter: saturate(0);
   justify-content: center;
 }
 
