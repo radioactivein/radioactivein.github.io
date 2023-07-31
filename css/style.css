@@ -355,9 +355,9 @@ a.active{
   padding:50px 50px 50px 0;
   display: inline-block;
   /* background-image: url(../img/dark-gradient-home.svg); */
-    background-repeat: no-repeat;
-    background-position: top,left;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top,left;
+  background-size: cover;
 }
 .get-in-touch-items{
   display: flex ;
