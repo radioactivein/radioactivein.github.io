@@ -40,15 +40,15 @@
         </div>
         <div class="col-md-8 col-6 nav-bar p-0">
             <div class="theme-switcher-nav pe-3">     
-                <label id="switch" class="switch">
-                    <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <label id="switch" class="switch" aria-labelledby="theme-changer">
+                    <input type="checkbox" onchange="toggleTheme()" id="slider" aria-labelledby="toggle-button">
                     <span class="slider round"></span>
                 </label>
         </div>
        
             <input type="checkbox" name="check" id="check">
             <label for="check" class="navbtn ">
-                <span class="nav-open-bt bi-list"></span>
+                <span class="nav-open-bt fa-solid fa-bars-staggered"></span>
                 <span class="nav-close-bt bi-x-lg"></span>
             </label>
 
@@ -63,8 +63,8 @@
         </div>
          <!--  ************* theme ******** -->
         <div class="col-md-2 theme-switcher align-center">     
-                 <label id="switch" class="switch">
-                     <input type="checkbox" onchange="toggleTheme()" id="slider">
+                 <label id="switch" class="switch" aria-labelledby="theme-changer-mobile">
+                     <input type="checkbox" onchange="toggleTheme()" id="sliders" aria-labelledby="toggle-button-mobile">
                      <span class="slider round"></span>
                  </label>
         </div>
@@ -154,7 +154,7 @@
                 <div class="row about-info ">
                     <div class="col-md-6 ">
                         <div class=" address">
-                            <h5 class="px-0 mb-4">Contact info</h5>
+                            <h4 class="px-0 mb-2">Contact info</h4>
                             <ul class="p-0 m-0">
                                 <li><span>Phone: </span> <a href="tel:+919745538151"> +91 9745538151</a></li>
                                 <li><span>Email: </span> <a href="mailto:ameenbaasim@outlook.com">ameenbaasim@outlook.com</a> </li>
@@ -163,7 +163,7 @@
                     </div>
                     <div class="col-md-6 ">
                         <div class="cv">
-                            <h5 class="px-0 mb-4">Download CV</h5>
+                            <h4 class="px-0 mb-2">Download CV</h4>
                             <a href="https://drive.google.com/uc?export=download&id=1rdPoQrOp9f-UfaILxJoNvdmQGpPtPQLg"  class="cv-btn" > Download  Now </a>
                         </div>
                     </div>
@@ -336,7 +336,7 @@
             <div class="mb-5">
                <div class="row skill-container " data-aos="fade-up">
                     
-                <h1 class="text-center mb-5">Skills</h3>
+                <h1 class="text-center mb-5">Skills</h1>
                     <div class="col-md-12 edu-img-main mb-4">
                         <!-- <img src="img/3d-casual-life-text-program-on-computer-screen.png" alt="skills-banner-monitor" width="30%"> -->
                     </div>
