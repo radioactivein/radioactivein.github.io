@@ -779,7 +779,6 @@ div >.address{
 
 .skill-container{
   background-image: var(--bg-skill);
-  /* background-image: url("https://images.unsplash.com/photo-1688232542797-c3e762c7e3c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"); */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -1062,7 +1061,8 @@ input[type=submit]:focus{
 
 .theme-light {
   --bg-primary:hsl(0, 0%, 100%) !important ;
-  --bg-secondary:hsla(209, 100%, 91%, 0.518) ;
+  --bg-secondary:hsla(0, 0%, 96%, 0.52) ;
+  /* --bg-secondary:hsla(209, 100%, 91%, 0.518) ; */
   --bg-secondary-1:rgb(33 33 33 / 80%) ;
   --bg-cards:rgba(255, 255, 255, 0.61);
   --bg-nav:rgba(255, 255, 255, 0.551);
