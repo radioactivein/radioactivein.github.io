@@ -362,18 +362,20 @@ a.active{
 .get-in-touch-items{
   display: flex ;
   flex-direction: column;
-  /* border: solid red 1px; */
 }
 
 /* ********* social-icons ****** */
+.contact-bt{
+  
+}
 .social{
   padding-top: 0.3rem;
-  display: inline-flex;
+  display: flex;
   gap: 5 !important;
 }
 .social-block{
-  padding:2px 9px;
-  border-radius: 50%;
+  padding:5px 10px;
+  border-radius: 8px;
   display: block;
   /* background-color: var(--bg-icon); */
   /* border: solid 1.5px rgb(255, 144, 144); */
