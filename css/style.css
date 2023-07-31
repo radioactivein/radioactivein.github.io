@@ -11,7 +11,7 @@ body{
     background-size: 400% 400%;
     overflow-x: hidden !important;
   }
-  html{
+html{
     scroll-behavior: smooth;
   }
 .wrap{
@@ -68,7 +68,6 @@ body{
 --bs-breakpoint-lg: 992px;
 --bs-breakpoint-xl: 1200px;
 --bs-breakpoint-xxl: 1400px; */
-
 a{
   text-decoration: none !important;
   color: var(--clr-primary) !important;
@@ -225,7 +224,6 @@ a.active{
   flex-wrap: nowrap;
   justify-content: center;
 }
-
 @media(max-width:780px){
   body{
     overflow-x: hidden !important;
@@ -353,7 +351,6 @@ a.active{
   99% { background-color: transparent; }
   100%  { background-color: #ccc; }
 }
-
 .get-in-touch-items-wrapper{
   padding:50px 50px 50px 0;
   display: inline-block;
@@ -368,16 +365,12 @@ a.active{
   /* border: solid red 1px; */
 }
 
-
-
 /* ********* social-icons ****** */
-
 .social{
   padding-top: 0.3rem;
   display: inline-flex;
   gap: 5 !important;
 }
-
 .social-block{
   padding:2px 9px;
   border-radius: 50%;
@@ -391,9 +384,7 @@ a.active{
   -webkit-background-clip: text !important;
   /* background-clip: border-box; */
   background: var(--clr-icons);
-
 }
-
 .social span{
   font-size: 25px;
   color: rgb(109, 109, 255);
@@ -408,7 +399,6 @@ a.active{
   .hero-text p{
     font-size: 30px !important;
   }
-    
 }
 @media(max-width:768px){
   .hero-data{
@@ -420,7 +410,6 @@ a.active{
     align-items: center;
   }
 }
-
 /* ******* profile-image ****** */
 .profile-image{
   border-radius: 50% 50% 15px 15px;
@@ -441,7 +430,6 @@ a.active{
     margin-top:15px;
   }
 }
-
 /* ******* About ******* */
 .about-container{
     background-color: var(--bg-secondary);
