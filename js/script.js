@@ -159,7 +159,7 @@ const section = document.querySelector('#progress1');
 observer.observe(section);
 // Function to load your specific script
 function loadScript() {
-  var progress1 = 0.5;
+  var progress1 = 0.1; //html
   $('#progress').find('#blue').animate({'stroke-dashoffset': 198 * progress1}, 2500);
 
   var progress1 = 0.1 //css
@@ -177,7 +177,7 @@ function loadScript() {
   var progress1 = 0.1 //ai
   $('#progress5').find('#blue').animate({'stroke-dashoffset': 198 * progress1}, 3700);
 
-  var progress1 = 0.2 //figma
+  var progress1 = 0.3 //figma
   $('#progress6').find('#blue').animate({'stroke-dashoffset': 198 * progress1}, 3600);
 
   var progress1 = 0.5

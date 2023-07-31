@@ -3,8 +3,8 @@ body{
     margin: 0;
     font-family: Arial;
     color: var(--clr-primary) !important;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
     /* background-color: #151515 !important ; */
     background-color: var(--bg-primary) !important ;
     /* transition: all .2s ease-out; */
@@ -414,6 +414,8 @@ a.active{
 .profile-image{
   border-radius: 50% 50% 15px 15px;
   overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s ease-in;
   /* margin-top: -33px; */
   /* background-image: url(../img/pictures/me.png); */
   background-position: top;
@@ -990,4 +992,8 @@ border-radius: 34px;
 }
 .slider.round:before {
 border-radius: 50%;
+}
+
+path.blue{
+  stroke: var(--clr-primary);
 }

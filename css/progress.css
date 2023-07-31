@@ -6,7 +6,7 @@
   
   path {
     stroke-linecap: round;
-    stroke-width: 6;
+    stroke-width: 1.5;
   }
   
   path.grey {
@@ -15,7 +15,8 @@
   }
   
   path.blue {
-    stroke: url(#gradient);
+    /* stroke: black; */
+    /* stroke: url(#gradient); */
     stroke-dasharray: 198;
     stroke-dashoffset: 198;
     animation: dash 30s ease-out forwards;
