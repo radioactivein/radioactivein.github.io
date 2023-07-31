@@ -427,6 +427,10 @@ a.active{
   filter: brightness(120%);
   justify-content: center;
 }
+.profile-image img{
+  height:450px;
+  width: auto;
+}
 @media(max-width:780px){
   .profile-image{
     margin-top:15px;
