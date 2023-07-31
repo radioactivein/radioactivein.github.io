@@ -14,10 +14,6 @@ body{
   html{
     scroll-behavior: smooth;
   }
-:root{
-  /* --bg-secondary:hsl(210deg 100% 92.84% / 73%); */
-
-}
 .wrap{
   padding:0 20px ;
 }
@@ -58,7 +54,6 @@ body{
     padding: 40px 100px !important;
   }
 }
-
 @media(min-width:1300px){
   .wrap{
     padding: 0 170px !important;
@@ -126,7 +121,6 @@ ul{
 .expand{
   transition: 50ms ease-in;
 }
-
 /* ********* navbars ********* */
 .header{
   position: fixed;
@@ -292,7 +286,6 @@ a.active{
     justify-content: flex-end;
 }
 }
-  
 /* ********** home/ hero - section ********** */
 #home{
   padding-top: 120px;
@@ -321,7 +314,6 @@ a.active{
   flex-direction: column;
 }
 @media(min-width:768px){
-
   .hero-text{
     padding-top: 50px;
   }
