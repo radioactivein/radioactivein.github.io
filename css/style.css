@@ -15,8 +15,7 @@ html{
     scroll-behavior: smooth;
   }
 :root{
-  --shadow-color: 0deg 0% 75%;
-  --shadow-elevation-medium:
+    --shadow-elevation-medium:
     0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.23),
     0.7px 1.4px 1.8px -0.8px hsl(var(--shadow-color) / 0.23),
     1.7px 3.4px 4.3px -1.7px hsl(var(--shadow-color) / 0.23),
@@ -382,8 +381,15 @@ a.active{
   gap: 5 !important;
   padding-bottom: 5px;
 }
+.social-block-bg{
+  background-color:var(--bg-secondary) ;
+ 
+  border-radius: 8px;
+
+}
 .social-block{
   margin-bottom:5px ;
+  margin-right:6px !important;
   padding:5px 10px;
   border-radius: 8px;
   display: block;
@@ -391,8 +397,7 @@ a.active{
   /* background-color: var(--bg-icon); */
   /* border: solid 1.5px rgb(255, 144, 144); */
   transition: 1s;
-  border:solid 2px var(--bg-primary) !important;
-  margin-right:6px !important;
+  border:solid 2px rgba(255, 255, 255, 0) !important;
   /* margin-left: 1px; */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text !important;
@@ -911,6 +916,7 @@ input[type=submit]:focus{
   --clr-input-border:rgba(233, 233, 233, 0.8);
   --clr-input:rgb(0, 0, 0);
   --clr-footer-border:#ffff;
+  --shadow-color: 0deg 0% 75%;
 
   --bg-img1:url(../img/3d-gradient.svg);
   --bg-skill:url(../img/gradient-less-blur.svg);
@@ -943,7 +949,8 @@ input[type=submit]:focus{
   --clr-skill-border:rgba(108, 108, 108, 0.645);
   --clr-input-border:rgb(33 33 33 / 80%);
   --clr-input:rgb(255, 255, 255);
-  --clr-footer-border:rgba(104, 104, 104, 0.689);
+  --clr-footer-border:rgba(255, 255, 255, 0.689);
+  --shadow-color:120deg 20% 20%;
 
   --bg-img1:url(../img/3d-gradient.svg);
   --bg-skill:url(../img/dark-gradient-education.svg);
