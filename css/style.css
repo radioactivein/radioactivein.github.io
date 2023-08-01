@@ -445,10 +445,10 @@ a.active{
   background-repeat: no-repeat;
   background-color: var(--bg-secondary);
   display: flex;
-  filter: brightness(120%);
   justify-content: center;
 }
 .profile-image img{
+  filter: brightness(120%);
   height:450px;
   width: auto;
 }
@@ -470,6 +470,11 @@ a.active{
     /* border: solid 1px --clr-primary; */
     /* box-shadow: 0 24px 32px rgba(0,0,0,.06); */
 }
+.about-img-main img{
+  height:250px; 
+  width:200px;
+}
+
 div >.address{
     border-right:solid 2px rgb(86, 86, 86);
 }
@@ -583,7 +588,7 @@ div >.address{
   /* justify-content: space-between; */
   align-items: center;
 }
-.edu-img-main{
+.section-banner{
   width: 100%;
   display: flex;
   align-items: center;
@@ -671,7 +676,7 @@ div >.address{
 }
 /* *********** skills - cards ********* */
 .skill-container{
-  background-image: var(--bg-skill);
+  /* background-image: var(--bg-skill); */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -701,13 +706,13 @@ div >.address{
     top: 2617px; */
     padding: 20px;
     z-index: 10 !important ;
-    background: var(--bg-dark-transparent);
-    /* background-color: rgb(113 113 113 / 4%); */
+    /* background: var(--bg-dark-transparent); */
+    background-color: var(--bg-primary);
     /* border: 1px solid rgb(255 255 255 / 11%); */
-    backdrop-filter:var(--bg-blur);
+    /* backdrop-filter:var(--bg-blur); */
     /* background-color: --clr-primary; */
     border:1.5px solid var(--clr-skill-border);
-    border-radius: 21px;
+    border-radius: 18px;
     /* box-shadow: 0 5px 32px rgba(0,0,0,.06); */
 }
 .skill-card-content{
@@ -1046,4 +1051,7 @@ border-radius: 50%;
 
 path.blue{
   stroke: var(--clr-primary);
+}
+path.grey{
+  stroke: var(--bg-secondary);
 }
