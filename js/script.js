@@ -13,6 +13,8 @@ $(document).ready(function(){
           $(".header").css("background" , "rgba(0, 0, 0, 0.0)");  	
         }
     })
+    var year = new Date().getFullYear();
+    $('#currentYear').text(year);
   })
 
 

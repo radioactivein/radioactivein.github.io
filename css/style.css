@@ -749,7 +749,7 @@ div >.address{
     position: relative;
 }
 .item{
-  height: 250px;
+  /* height: 250px; */
   /* border-radius: 8px; */
   /* border: solid 2px var(--clr-skill-border); */
   /* background-color: rgb(79, 85, 255); */
@@ -770,7 +770,7 @@ div >.address{
     /* width: 50%; */
   }
   .item{
-    height: 350px;
+    /* height: 350px; */
   }
 }
 /* *********** Contact ********* */
@@ -887,7 +887,7 @@ input[type=submit]:focus{
     border: solid 0.7px var(--clr-footer-border);
     padding: 25px 10px 10px 10px;
     position: relative;
-    margin-top: -50px !important;
+    /* margin-top: -50px !important; */
     backdrop-filter: var(--bg-blur);
 }
 #footer h5{

@@ -130,7 +130,7 @@
 
             <div class="col-md-5 ">
                 <div class="profile-image mt-4">
-                    <img src="img/pictures/Group 158.png"  alt="profile-image">
+                    <!-- <img src="img/pictures/Group 158.png"  alt="profile-image"> -->
                 </div>
             </div>      
         </div>
@@ -186,7 +186,7 @@
                             <img src="img/3d/education.webp" alt="3d-casual-life-young-man-surrounded-by-gadgets-writing-notes">                            
                         </div>
 
-                        <div class="col-md-12 edu-text-align" data-aos="fade-up" data-aos-anchor-placement="top-bottom"  data-aos-duration="3000">
+                        <!-- <div class="col-md-12 edu-text-align" data-aos="fade-up" data-aos-anchor-placement="top-bottom"  data-aos-duration="3000">
                             <div class="edu-card"  data-aos-duration="1500">
                                 <div class="row p-0">
                                     <div class="col-md-3">
@@ -216,7 +216,7 @@
                                     <div class="col-md-1"></div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
 
                         <div class="col-md-12 edu-text-align" data-aos="fade-up" data-aos-anchor-placement="top-bottom"  data-aos-duration="3000">
@@ -338,7 +338,15 @@
                     
                 <h1 class="text-center mb-5">Skills</h1>
                     <div class="col-md-12 section-banner mb-4">
-                        <img src="img/3d/" alt="skills-banner-monitor" width="30%">
+                        <p>I'm a web enthusiast with a solid foundation in front-end technologies and a growing interest in modern frameworks. 
+                            I have moderate to advanced skills in HTML, CSS, Figma, WordPress, and Shopify theme editing and store development. 
+                            I’m comfortable working with jQuery for basic DOM manipulation and have hands-on 
+                            experience building Filament dashboards in Laravel.
+                            <br>I also bring creative design experience with moderate Photoshop and strong Illustrator 
+                            skills. Currently, I’m exploring new tools and technologies, with a keen interest in React, 
+                            Svelte, and Astra
+                        </p>
+                        <!-- <img src="img/3d/" alt="skills-banner-monitor" width="30%"> -->
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-sm-4 col-6 skill-card-wrapper text-center">
@@ -524,15 +532,15 @@
             <div class="my-5">
                 <div class="row project-container">
                     <h1 class="text-center mb-4">Projects</h1>
-                    <div class="col-md-12 section-banner mb-5">
-                        <img src="img/casual-life-3d-board-with-notes.png" alt="projects-board">
+                    <div class=" section-banner mb-5">
+                        <img src="img/3d/projects.webp" width="150px" alt="projects-board">
                     </div>
                     
                     <div class="owl-carousel owl-theme">
-                        <div class="item"><img src="img/pictures/reen.webp" alt="site-reen"></div>
+                        <!-- <div class="item"><img src="img/pictures/reen.webp" alt="site-reen"></div> -->
                         <div class="item"><img src="img/pictures/realfact.webp" alt="site-realfactory"></div>
                         <div class="item"><img src="img/pictures/digicon.webp" alt="site-digicon"></div>
-                        <div class="item"><img src="img/pictures/reen.webp" alt="site-reen-1"></div>
+                        <!-- <div class="item"><img src="img/pictures/reen.webp" alt="site-reen-1"></div> -->
                         <div class="item"><img src="img/pictures/realfact.webp" alt="site-realfactory-1"></div>
                         <div class="item"><img src="img/pictures/digicon.webp" alt="site-digicon-1"></div>
                         
@@ -684,7 +692,7 @@
         <div class="row text-center">
             <div class="container wrap" >
                 <p  class="border-top pt-3">
-                    ©2023 alameen.us All Rights Reserved.
+                    ©<span id="currentYear"></span> <a href="https://ameen.bond">ameen.bond</a> All Rights Reserved.
                 </p>
             </div>
             
@@ -701,7 +709,12 @@
     
     <p style="font-size: 10px;color:rgb(65, 65, 65);text-align: center; padding-top: 10px;">Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a></p>
 
-    
+    <script>
+        $(document).ready(function(){
+            var year = new Date().getFullYear();
+            $('#currentYear').text(year);
+        });
+    </script>
     </div>
     <!--  *********** scripts ***********-->
 
