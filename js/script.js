@@ -182,8 +182,20 @@ function loadScript() {
   var progress1 = 0.3 //figma
   $('#progress6').find('#blue').animate({'stroke-dashoffset': 198 * progress1}, 3600);
 
-  var progress1 = 0.5
+  var progress1 = 0.1
   $('#progress7').find('#blue').animate({'stroke-dashoffset': 198 * progress1}, 3300);    
+
+  var progress1 = 0.5
+  $('#progress8').find('#blue').animate({'stroke-dashoffset': 198 * progress1}, 3300);  
+
+  var progress1 = 0.1
+  $('#progress9').find('#blue').animate({'stroke-dashoffset': 198 * progress1}, 3300);
+  
+  var progress1 = 0.7
+  $('#progress10').find('#blue').animate({'stroke-dashoffset': 198 * progress1}, 3300);  
+
+  var progress1 = 0.4
+  $('#progress11').find('#blue').animate({'stroke-dashoffset': 198 * progress1}, 3300);  
 }
 
 

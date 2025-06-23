@@ -941,6 +941,7 @@ input[type=submit]:focus{
   --clr-input-border:rgba(233, 233, 233, 0.8);
   --clr-input:rgb(0, 0, 0);
   --clr-footer-border:#ffff;
+  --clr-footer-border: -webkit-linear-gradient(199deg, red, green);
   --shadow-color: 0deg 0% 75%;
 
   --bg-img1:url(../img/3d-gradient.svg);
@@ -975,6 +976,7 @@ input[type=submit]:focus{
   --clr-input-border:rgb(33 33 33 / 80%);
   --clr-input:rgb(255, 255, 255);
   --clr-footer-border:rgba(255, 255, 255, 0.689);
+  --clr-footer-border: -webkit-linear-gradient(199deg, red, green);
   --shadow-color:120deg 20% 20%;
 
   --bg-img1:url(../img/3d-gradient.svg);
