@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection | Zeofen</title>
+    <link rel="shortcut icon" href="img/fav.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.scss">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/font-awsome.css">
+    <link rel="stylesheet" href="css/aos-min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="shortcut icon" href="css/font-awsome.css" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-cnt">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+                </div>
+
+                <div class="search-bar">
+                    <input id="search" name="search" class="form-control" type="text" placeholder="Search">
+                    <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="close-icon"><i class="fa-solid fa-xmark"></i></div>
+                    <div class="search-suggestion">
+                        <ul class="items">
+                            <li class="item">
+                                <a href="">
+                                    <img class="suggest-thumb" src="img/collection/boy.png" alt="search-suggestion">
+                                    <h5 class="details">Boys T shirt Large</h5>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="">
+                                    <img class="suggest-thumb" src="img/collection/boy.png" alt="search-suggestion">
+                                    <h5 class="details">Boys T shirt Large</h5>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="">
+                                    <img class="suggest-thumb" src="img/collection/boy.png" alt="search-suggestion">
+                                    <h5 class="details">Boys T shirt Large</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="others">
+                    <!-- drop down menu -->
+                    <div class="user">
+                        <i class="fa-solid fa-user-circle user-icon"></i>
+                        <p class="user-name m-0">user name</p>
+                        <i class="fa-solid fa-chevron-down more-icon"></i>
+                        <ul class="user-menu">
+                            <li class="user-item">
+                                <a href="login.html">
+                                <i class="fa-solid fa-user"></i>
+                                <span>Profile / login </span>
+                                </a>
+                            </li>
+                            <li class="user-item">
+                                <a href="cart.html">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span>orders</span>
+                                </a>
+                            </li>
+                            <li class="user-item">
+                                <a href="wishlist.html">
+                                <i class="fa-solid fa-heart"></i>
+                                <span>Wishlist</span>
+                                </a>
+                            </li>
+                            <li class="user-item">
+                                <a href="#">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wishlist status-icon">
+                        <a href="wishlist.html">
+                            <i class="fa-solid fa-heart"></i>
+                            <!-- <span>0</span> -->
+                        </a>
+                    </div>
+                    <div class="cart status-icon">
+                        <a href="cart.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>0</span>
+                        </a>
+                    </div>
+                    <!-- <div class="more status-icon">
+                        <a href="wishlist.html">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                            <span>0</span>
+                        </a>
+                    </div> -->
+                </div>   
+                <!-- <div class="toggle-bt">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> -->
+
+                <div class="more status-icon">
+                    <i class="fa-solid fa-bars"></i>
+                    <!-- <a href="wishlist.html"> -->
+                        <!-- <span>0</span> -->
+                    <!-- </a> -->
+                </div>
+                
+                <!-- <div class="login">
+                    <a href="login.html">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </div> -->
+            </div>
+            <div class="header-2-cnt">
+                <nav>
+                    
+                    <ul>
+                        <li>
+                            <a href="#">All Categories</a>
+                        </li>
+                        <li>
+                            <a href="#">New Arrivals</a>
+                        </li>
+                        <li>
+                            <a href="#">Best Sellers</a>
+                        </li>
+                        <li>
+                            <a href="#">Top Rated</a>
+                        </li>
+                        <li>
+                            <a href="#">On Sale</a>
+                        </li>
+                        <li>
+                            <a href="#">Top Rated</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="collections">
+        <div class="collection mt-2">
+            <div class="container">
+                <h2>Collection Products</h2>
+
+                <div class="sort-filter">
+                    <div class="sort">
+                        <select name="sort" id="sort">
+                            <option value="">Sort by</option>
+                            <option value="">Lowest Price</option>
+                            <option value="">Highest Price</option>
+                            <option value="">Newest</option>
+                            <option value="">Oldest</option>
+                        </select>
+                    </div>
+                    <div class="filter">
+                        <select name="filter" id="filter">
+                            <option value="">Filter by</option>
+                            <option value="">Lowest Price</option>
+                            <option value="">Highest Price</option>
+                            <option value="">Newest</option>
+                            <option value="">Oldest</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="featured-products">
+                    <div class="row g-3">
+    
+                        <!-- product box -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 col-6">
+                            <div class="product">
+                                <a class="product-link" href="product.html">
+                                    <!-- product image -->
+                                    <div class="product-img">
+                                        <img src="img/nature.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </a>
+                                    <!-- product info -->
+                                    <a href="#" class="product-content">
+                                        <p class="name">Product name</p>
+                                        <p class="description">Product description</p>
+                                        <div class="product-price">
+                                            <div class="strike-price"><span>₹</span>449</div>
+                                            <div class="price"><span>₹</span>399</div>
+                                        </div>
+                                    </a>
+
+                                    <!-- save products -->
+                                    <div class="product-icons">
+                                        <a href="#">
+                                            <!-- not liked -->
+                                            <i class="fa-regular fa-heart"></i>
+    
+                                            <!-- liked -->
+                                            <!-- <i class="fa-solid fa-heart"></i> -->
+                                        </a>
+                                        <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
+                                    </div>
+                                <!-- </a> -->
+                                <!-- buy button -->
+                                <a href="#" class="product-btn mt-2">
+                                    Buy Now
+                                </a>
+                            </div>
+                        </div>
+    
+                        <!-- product box -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 col-6">
+                            <div class="product">
+                                <a class="product-link" href="product.html">
+                                    <!-- product image -->
+                                    <div class="product-img">
+                                        <img src="img/nature.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </a>
+                                    <!-- product info -->
+                                    <a href="#" class="product-content">
+                                        <p class="name">Product name</p>
+                                        <p class="description">Product description</p>
+                                        <div class="product-price">
+                                            <div class="strike-price"><span>₹</span>449</div>
+                                            <div class="price"><span>₹</span>399</div>
+                                        </div>
+                                    </a>
+    
+                                    <!-- save products -->
+                                    <div class="product-icons">
+                                        <a href="#">
+                                            <!-- not liked -->
+                                            <i class="fa-regular fa-heart"></i>
+    
+                                            <!-- liked -->
+                                            <!-- <i class="fa-solid fa-heart"></i> -->
+                                        </a>
+                                        <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
+                                    </div>
+                                <!-- </a> -->
+                                <!-- buy button -->
+                                <a href="#" class="product-btn mt-2">
+                                    Buy Now
+                                </a>
+                            </div>
+                        </div>
+    
+                        <!-- product box -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 col-6">
+                            <div class="product">
+                                <a class="product-link" href="product.html">
+                                    <!-- product image -->
+                                    <div class="product-img">
+                                        <img src="img/nature.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </a>
+                                    <!-- product info -->
+                                    <a href="#" class="product-content">
+                                        <p class="name">Product name</p>
+                                        <p class="description">Product description</p>
+                                        <div class="product-price">
+                                            <div class="strike-price"><span>₹</span>449</div>
+                                            <div class="price"><span>₹</span>399</div>
+                                        </div>
+                                    </a>
+                                    <!-- save products -->
+                                    <div class="product-icons">
+                                        <a href="#">
+                                            <!-- not liked -->
+                                            <i class="fa-regular fa-heart"></i>
+    
+                                            <!-- liked -->
+                                            <!-- <i class="fa-solid fa-heart"></i> -->
+                                        </a>
+                                        <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
+                                    </div>
+                                <!-- </a> -->
+                                <!-- buy button -->
+                                <a href="#" class="product-btn mt-2">
+                                    Buy Now
+                                </a>
+                            </div>
+                        </div>
+    
+                        <!-- product box -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 col-6">
+                            <div class="product">
+                                <a class="product-link" href="product.html">
+                                    <!-- product image -->
+                                    <div class="product-img">
+                                        <img src="img/nature.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </a>
+                                    <!-- product info -->
+                                    <a href="#" class="product-content">
+                                        <p class="name">Product name</p>
+                                        <p class="description">Product description</p>
+                                        <div class="product-price">
+                                            <div class="strike-price"><span>₹</span>449</div>
+                                            <div class="price"><span>₹</span>399</div>
+                                        </div>
+                                    </a>
+                                    <!-- save products -->
+                                    <div class="product-icons">
+                                        <a href="#">
+                                            <!-- not liked -->
+                                            <i class="fa-regular fa-heart"></i>
+    
+                                            <!-- liked -->
+                                            <!-- <i class="fa-solid fa-heart"></i> -->
+                                        </a>
+                                        <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
+                                    </div>
+                                <!-- </a> -->
+                                <!-- buy button -->
+                                <a href="#" class="product-btn mt-2">
+                                    Buy Now
+                                </a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="footer-content">
+                        <img src="img/logo.jpg" alt="logo-alt">
+                        <p>Fashion store</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12"></div>
+                <div class="col-md-4 col-sm-6 col-xs-12"></div>
+                <div class="col-md-12">
+                    <div class="below-footer">
+                        <p>Copyright © 2025 Zeofen. All rights reserved.</p>
+                        <p>Developed by <a href="https://www.linkedin.com/in/zeofen/">Zeofen</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- loading screen -->
+    <!-- <div class="loading">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h1>Loading</h1>
+        </div>
+    </div> -->
+
+    <!-- scroll top button -->
+    <div class="scroll-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- scripts -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    
+
+    <!-- <script>
+        AOS.init({
+            duration: 2000,
+            easing: 'ease-in-sine',
+            delay: 100,
+            once: true,
+            mirror: true,
+            startEvent: 'DOMContentLoaded'
+        });
+    </script> -->
+</body>
+</html>

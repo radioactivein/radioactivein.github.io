@@ -51,6 +51,16 @@
     }
     .user{
         height: 40px;
+        gap: 20px;
+    }
+    .user .user-menu.clicked {
+        display: block;
+        bottom: 40px !important;
+        top: initial;
+        right: -10px;
+        left: initial;
+        width: 50vw;
+        z-index: 9999;
     }
     /* .toggle-bt {
         display: flex;
@@ -84,7 +94,6 @@
 
     .buy-btn{
         flex-direction: column;
-        gap: 10px;
     }
 }
 
@@ -111,15 +120,7 @@
         display: none !important;
     }
 
-    .user:hover .user-menu {
-        display: block;
-        bottom: 40px !important;
-        top: initial;
-        right: -10px;
-        left: initial;
-        width: 50vw;
-        z-index: 9999;
-    }
+    
 
     .category-circle{
         width: 60px;
@@ -140,3 +141,21 @@
     
 }
 
+
+
+
+@media screen and (min-width: 768px) {
+    .user:hover .user-menu {
+        display: block;
+    }
+
+    .user:hover .user-menu {
+        display: block;
+        /* bottom: 40px !important;
+        top: initial;
+        right: -10px;
+        left: initial;
+        width: 50vw;
+        z-index: 9999; */
+    }
+}

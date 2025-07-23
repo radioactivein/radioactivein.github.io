@@ -44,6 +44,16 @@ $(window).on('load', function () {
         }
     });
 
+    $('.user').on('click',function(){
+        $('.user-menu').toggleClass('clicked');
+    });
+
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.user, .user-menu').length) {
+            $('.user-menu').removeClass('clicked');
+        }
+    });
+
     // color selection
     $('.variant-color button').on('click',function(){
         $('.variant-color button').removeClass('clicked');

@@ -280,10 +280,6 @@ header {
   background-color: #f5f5f5;
 }
 
-.user:hover .user-menu {
-  display: block;
-}
-
 .user .user-icon {
   font-size: 20px;
   color: #09856d;
@@ -302,6 +298,10 @@ header {
 
 .user:hover .more-icon {
   transform: rotate(180deg);
+}
+
+.user .user-menu.clicked {
+  display: block;
 }
 
 .user-name {
@@ -527,14 +527,14 @@ header {
 .category-circle {
   /* cursor: pointer; */
   flex: 0 0 auto; /* Important: Prevent shrinking */
-  width: 90px;
-  height: 90px;
+  width: 100%;
+  height: 350px;
   background-color: #ddd;
-  border-radius: 50%; /* Makes it a circle */
+  border-radius: 5px; /* Makes it a circle */
   scroll-snap-align: start; /* optional */
   overflow: hidden;
   transition: all 0.2s ease-in-out;
-  border: solid 1px #09856d;
+  border: solid 1px #c4fff3;
 }
 .category-circle img {
   padding: 2px;
@@ -542,7 +542,7 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 100px;
+  border-radius: 5px;
   transition: all 0.2s ease-in-out;
   object-position: center top;
 }
@@ -746,6 +746,10 @@ header {
   background: var(--primary-color);
   color: #fff;
 }
+.product .variant-size button.clicked {
+  background: var(--primary-color);
+  color: #fff;
+}
 .product .variant-color button {
   position: relative;
   transform: scale(0.8);
@@ -760,6 +764,13 @@ header {
   color: #fff;
   transform: scale(0.56);
   opacity: 1;
+}
+.product .variant-color button.clicked {
+  background: var(--primary-color);
+  color: #fff;
+  transform: scale(0.56);
+  opacity: 1;
+  border: solid 2px #747474;
 }
 .product .more-info {
   padding: 10px;
@@ -841,10 +852,29 @@ header {
   color: #656565;
   line-height: 1.2;
 }
-.product-data .price {
-  font-size: 20px;
+.product-data .product-price {
+  font-size: 25px;
   font-weight: 600;
   color: #000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.product-data .product-price .strike-price {
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+.product-data .product-price .discount {
+  font-size: 14px;
+  font-weight: 400;
+  color: #09856d;
+  background: rgba(9, 133, 108, 0.1254901961);
+  padding: 2px 10px;
+  border-radius: 100px;
+  border: solid 1px #09856d;
 }
 .product-data .variant-title {
   font-size: 16px;
@@ -870,11 +900,16 @@ header {
   align-items: center;
   gap: 5px;
   margin-bottom: 10px;
+  border: solid 1px rgba(9, 133, 108, 0.4235294118);
+  width: max-content;
+  padding: 5px;
+  padding-top: 0;
+  border-radius: 10px;
 }
 .product-data .count-selector .product-count {
   width: max-content;
   text-align: center;
-  padding: 2px 10px;
+  padding: 2px 15px;
 }
 .product-data .count-selector button {
   width: 45px;
@@ -889,13 +924,9 @@ header {
   cursor: pointer;
   z-index: 100;
   font-size: 28px;
-  border: solid 1px rgba(9, 133, 108, 0.4235294118);
   font-weight: 600;
+  border: none;
   color: black;
-}
-.product-data .count-selector button:hover {
-  background: var(--primary-color-hover);
-  color: #fff;
 }
 .product-data .buy-btn {
   display: flex;
@@ -928,6 +959,68 @@ header {
 .product-data .wishlist:hover {
   background: var(--primary-color);
   color: #fff;
+}
+
+.product-info {
+  padding: 20px;
+  background: #f7fafa;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.product-info h2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #000;
+}
+.product-info p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #656565;
+}
+.product-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.product-info ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.product-info ul li span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #656565;
+}
+
+.collection .sort-filter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.collection .sort-filter .sort,
+.collection .sort-filter .filter {
+  width: 120px;
+}
+.collection .sort-filter .sort select,
+.collection .sort-filter .filter select {
+  width: 100%;
+  padding: 5px;
+  padding-right: 25px;
+  border-radius: 10px;
+  border: solid 1px #09856d;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.collection .sort-filter .sort select:hover,
+.collection .sort-filter .filter select:hover {
+  background: #f5f5f5;
 }
 
 /* footer */
