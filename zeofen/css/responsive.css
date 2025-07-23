@@ -1,0 +1,142 @@
+/* @media screen and (max-width: 1920px) {
+
+} */
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 1023px) {
+    
+}
+
+@media screen and (max-width: 991px) {
+    
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        padding-top: 70px;
+    }
+    .user-name{
+        display: none;
+    }
+    .header-2-cnt{
+        padding: 0;
+    }
+    .header-2-cnt nav ul {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 80vh;
+        width: 100%;
+        flex-direction: column;
+        background: white;
+        z-index: 9999;
+        align-items: flex-start;
+        padding-left: 10px;
+        font-size: 20px;
+        box-shadow: black 0px 1px 20px -8px;
+        display: none;
+    }
+
+    .header-2-cnt nav ul.clicked{
+        display: flex;
+    }
+    .header-2-cnt nav ul li {
+        width: 96%;
+        /* background: red; */
+        border-bottom: solid 1px #c6c6c6;
+        padding-bottom: 10px;
+    }
+    .user{
+        height: 40px;
+    }
+    /* .toggle-bt {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        transition: 0.3s ease-in-out;
+        gap: 5px;
+        z-index: 99999;
+        position: relative;
+    }
+    .toggle-bt span{
+        width: 15px;
+        height: 8px;
+        background: black;
+    } */
+
+    .more.status-icon {
+        position: relative;
+        z-index: 99999;
+        display: block;
+    }
+
+    .search-suggestion {
+        width: 70vw;
+        left: -80px;
+    }
+    .suggest-thumb{
+        width: 35px;
+        height: 35px;
+    }
+
+    .buy-btn{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .featured-products .product .product-img{
+        height: 200px;
+    }
+
+    .header-cnt .others {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+        height: 50px;
+        box-shadow: #00000029 1px 0px 20px 0px;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+
+
+    .scroll-top{
+        bottom: 52px;
+        display: none !important;
+    }
+
+    .user:hover .user-menu {
+        display: block;
+        bottom: 40px !important;
+        top: initial;
+        right: -10px;
+        left: initial;
+        width: 50vw;
+        z-index: 9999;
+    }
+
+    .category-circle{
+        width: 60px;
+        height: 60px;
+    }
+    .search-suggestion {
+        width: 100vw;
+        left: -139px;
+    }
+
+}
+
+@media screen and (max-width: 424px) {
+    
+}
+
+@media screen and (max-width: 374px) {
+    
+}
+
