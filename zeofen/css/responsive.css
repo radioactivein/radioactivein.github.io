@@ -120,11 +120,13 @@
         display: none !important;
     }
 
-    
+    #banner .banner-img{
+        height: 300px;
+    }
+
 
     .category-circle{
-        width: 60px;
-        height: 60px;
+        height: 125px;
     }
     .search-suggestion {
         width: 100vw;
