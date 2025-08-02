@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeofen | Fashion store</title>
+    <link rel="shortcut icon" href="img/fav.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.scss">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/font-awsome.css">
+    <link rel="shortcut icon" href="css/font-awsome.css" type="image/x-icon">
+</head>
+<body class="pt-5">
+    <header>
+        <div class="container">
+            <div class="header-cnt">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="login-form">
+        <div class="login-form-cnt active" id="login-form">
+            <div class="login-form-cnt-cnt">
+                <h2>Login</h2>
+                <form action="">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" placeholder="yourmail@example.com" name="username" id="username" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Enter your password" name="password" id="password" required>
+                        <i class="fa-solid fa-eye-slash eye-icon-password" id="eye-icon"></i>
+                    </div>
+                    <button type="submit">Login</button>
+
+                    <hr>
+                    <!-- social media -->
+                    <div class="social-media">
+                        <p>Login with social media</p>
+                        <div class="social-media-cnt">
+                            <div class="social-media-item">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="social-media-item">
+                                <i class="fa-brands fa-google"></i>
+                            </div>
+                            <div class="social-media-item">
+                                <i class="fa-brands fa-apple"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Don't have an account? <a href="#" id="create-account-btn">Sign Up</a></p>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- create account -->
+        <div class="login-form-cnt " id="create-account">
+            <div class="login-form-cnt-cnt">
+                <h2>Create Account</h2>
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Enter your name" name="name" id="name" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobile">Mobile</label>
+                        <input type="number" placeholder="+91 1234567890" name="mobile" id="mobile" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" placeholder="yourmail@example.com" name="username" id="username" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Enter your password" name="password" id="password" required>
+                        <i class="fa-solid fa-eye-slash eye-icon-passweord" id="eye-icon"></i>
+                    </div>
+                    <button type="submit">Create Account</button>
+
+                    <hr>
+                    <!-- social media -->
+                    <div class="social-media">
+                        <p>Sign Up with social media</p>
+                        <div class="social-media-cnt">
+                            <div class="social-media-item">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="social-media-item">
+                                <i class="fa-brands fa-google"></i>
+                            </div>
+                            <div class="social-media-item">
+                                <i class="fa-brands fa-apple"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Already have an account? <a href="#" id="login-form-btn">Login</a></p>
+                </form>
+            </div>
+        </div>  
+    </div>
+
+
+    
+
+    <!-- loading screen -->
+    <div class="loading">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h1>Loading</h1>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- <script type="text/javascript" src="js/slick.min.js"></script> -->
+    
+</body>
+</html>

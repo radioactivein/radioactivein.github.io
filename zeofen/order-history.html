@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order History | Fashion store</title>
+        <link rel="shortcut icon" href="img/fav.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.scss">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/font-awsome.css">
+        <link rel="stylesheet" href="css/aos-min.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="shortcut icon" href="css/font-awsome.css" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-cnt">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+                    </div>
+    
+    
+                    <div class="others">
+                        <!-- drop down menu -->
+                        <div class="user">
+                            <i class="fa-solid fa-user-circle user-icon"></i>
+                            <p class="user-name m-0">user name</p>
+                            <i class="fa-solid fa-chevron-down more-icon"></i>
+                            <ul class="user-menu">
+                                <li class="user-item">
+                                    <a href="login.html">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>Profile / login </span>
+                                    </a>
+                                </li>
+                                <li class="user-item">
+                                    <a href="cart.html">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    <span>orders</span>
+                                    </a>
+                                </li>
+                                <li class="user-item">
+                                    <a href="wishlist.html">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="user-item">
+                                    <a href="#">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <span>Settings</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="wishlist status-icon">
+                            <a href="wishlist.html">
+                                <i class="fa-solid fa-heart"></i>
+                                <!-- <span>0</span> -->
+                            </a>
+                        </div>
+                        <div class="cart status-icon">
+                            <a href="cart.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>0</span>
+                            </a>
+                        </div>
+                        <!-- <div class="more status-icon">
+                            <a href="wishlist.html">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <span>0</span>
+                            </a>
+                        </div> -->
+                    </div>   
+                    <!-- <div class="toggle-bt">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div> -->
+    
+                    <div class="more status-icon">
+                        <i class="fa-solid fa-bars"></i>
+                        <!-- <a href="wishlist.html"> -->
+                            <!-- <span>0</span> -->
+                        <!-- </a> -->
+                    </div>
+                    
+                    <!-- <div class="login">
+                        <a href="login.html">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </div> -->
+                </div>
+                
+            </div>
+        </header>
+
+        <section id="cart">
+            <div class="container">
+                <div class="cart-header">
+                    <h1>Order History</h1>
+                </div>
+                <hr>
+                <div class="cart-cnt">
+                    <div class="row g-2">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="cart-products">
+                                <!-- each prodcut in cart -->
+                                <div class="cart-product">
+                                    <div class="cart-media">
+                                        <img src="img/collection/boy.png" width="100px" height="100px" alt="product">
+                                    </div>
+                                    <div class="cart-product-info">
+                                        <div class="price">
+                                            <h5 class="product-title"><a href="product.html">Boys T shirt Large</a></h5>
+                                            <div class="product-price">₹10.00</div>
+                                        </div>
+                                        <div class="delivery">
+                                            <div class="delivery-date">Delivered Date: 2025-08-02</div>
+                                            <div class="delivery-status delivered">Delivered</div>
+                                            <div class="order-id">Order ID: 123456789</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- each order in order history -->
+                                <div class="cart-product">
+                                    <div class="cart-media">
+                                        <img src="img/collection/boy.png" width="100px" height="100px" alt="product">
+                                    </div>
+                                    <div class="cart-product-info">
+                                        <div class="price">
+                                            <h5 class="product-title"><a href="product.html">Boys T shirt Large</a></h5>
+                                            <div class="product-price">₹10.00</div>
+                                        </div>
+                                        <div class="delivery">
+                                            <div class="delivery-date">Expected Delivery Date: <span>2025-08-02</span></div>
+                                            <div class="delivery-status pending">Pending</div>
+                                            <div class="order-id">Order ID: 123456789</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- each order in order history -->
+                                <div class="cart-product">
+                                    <div class="cart-media">
+                                        <img src="img/collection/boy.png" width="100px" height="100px" alt="product">
+                                    </div>
+                                    <div class="cart-product-info">
+                                        <div class="price">
+                                            <h5 class="product-title"><a href="product.html">Boys T shirt Large</a></h5>
+                                            <div class="product-price">₹10.00</div>
+                                        </div>
+                                        <div class="delivery">
+                                            <div class="delivery-date">Expected Date: 2025-08-02</div>
+                                            <div class="delivery-status">In Transit</div>
+                                            <div class="order-id">Order ID: 123456789</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- each order in order history -->
+                                <div class="cart-product">
+                                    <div class="cart-media">
+                                        <img src="img/collection/boy.png" width="100px" height="100px" alt="product">
+                                    </div>
+                                    <div class="cart-product-info">
+                                        <div class="price">
+                                            <h5 class="product-title"><a href="product.html">Boys T shirt Large</a></h5>
+                                            <div class="product-price">₹10.00</div>
+                                        </div>
+                                        <div class="delivery">
+                                            <div class="delivery-date">Delivery Date: 2025-08-02</div>
+                                            <div class="delivery-status">Cancelled</div>
+                                            <div class="order-id">Order ID: 123456789</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- empty cart -->
+                <div class="empty-cart">
+                    <div class="empty-cart-content">
+                        <div class="empty-cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <h5>cart empty</h5>
+                        <p>your cart is empty</p>
+                        <a href="index.html" class="btn">continue shopping</a>
+                    </div>
+                </div>  
+
+                
+            </div>
+        </section>
+
+        
+        <footer class="ftr-margin">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-content">
+                            <img src="img/logo.jpg" alt="logo-alt">
+                            <p>Fashion store</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12"></div>
+                    <div class="col-md-4 col-sm-6 col-xs-12"></div>
+                    <div class="col-md-12">
+                        <div class="below-footer">
+                            <p>Copyright © 2025 Zeofen. All rights reserved.</p>
+                            <p>Developed by <a href="https://www.linkedin.com/in/zeofen/">Zeofen</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+        <!-- do you want to empty cart confirmation modal -->
+         <div class="modal-empty-cart">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Empty Cart?</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to empty your cart?</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-cancel" onclick="closeModal()">Cancel</button>
+                    <button class="btn btn-empty-cart" onclick="clearCart()">Empty Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        
+    
+    
+        <!-- loading screen -->
+        <div class="loading">
+            <div class="loading-content">
+                <div class="loading-spinner"></div>
+                <h1>Loading</h1>
+            </div>
+        </div>
+    
+        <!-- scroll top button -->
+        <div class="scroll-top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    
+        <!-- scripts -->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        
+    
+        <!-- <script>
+            AOS.init({
+                duration: 2000,
+                easing: 'ease-in-sine',
+                delay: 100,
+                once: true,
+                mirror: true,
+                startEvent: 'DOMContentLoaded'
+            });
+        </script> -->
+    </body>
+    </html>

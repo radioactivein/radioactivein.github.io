@@ -22,32 +22,6 @@
                         <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
                     </div>
     
-                    <div class="search-bar">
-                        <input id="search" name="search" class="form-control" type="text" placeholder="Search">
-                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <div class="search-suggestion">
-                            <ul class="items">
-                                <li class="item">
-                                    <a href="">
-                                        <img class="suggest-thumb" src="img/collection/boy.png" alt="search-suggestion">
-                                        <h5 class="details">Boys T shirt Large</h5>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="">
-                                        <img class="suggest-thumb" src="img/collection/boy.png" alt="search-suggestion">
-                                        <h5 class="details">Boys T shirt Large</h5>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="">
-                                        <img class="suggest-thumb" src="img/collection/boy.png" alt="search-suggestion">
-                                        <h5 class="details">Boys T shirt Large</h5>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
     
                     <div class="others">
                         <!-- drop down menu -->
@@ -120,36 +94,187 @@
                         </a>
                     </div> -->
                 </div>
-                <div class="header-2-cnt">
-                    <nav>
-                        
-                        <ul>
-                            <li>
-                                <a href="#">All Categories</a>
-                            </li>
-                            <li>
-                                <a href="#">New Arrivals</a>
-                            </li>
-                            <li>
-                                <a href="#">Best Sellers</a>
-                            </li>
-                            <li>
-                                <a href="#">Top Rated</a>
-                            </li>
-                            <li>
-                                <a href="#">On Sale</a>
-                            </li>
-                            <li>
-                                <a href="#">Top Rated</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                
             </div>
         </header>
 
+        <section id="cart">
+            <div class="container">
+                <div class="cart-header">
+                    <h1>Cart</h1>
+                    <button onclick="openModal()">
+                        <i class="fa-solid fa-trash"></i>
+                        Clear</button>
+                </div>
+                <hr>
+                <div class="cart-cnt">
+                    <div class="row g-2">
+                        <div class="col-md-8 col-sm-12">
+                            <div class="cart-products">
+                                <!-- each prodcut in cart -->
+                                <div class="cart-product">
+                                    <div class="cart-media">
+                                        <img src="img/collection/boy.png" width="100px" height="100px" alt="product">
+                                    </div>
+                                    <div class="cart-product-info">
+                                        <div class="price">
+                                            <h5 class="product-title"><a href="product.html">Boys T shirt Large</a></h5>
+                                            <div class="product-price">₹10.00</div>
+                                        </div>
+                                        <div class="cart-product-actions">
+                                            <div>
+                                                <div class="count-selector">
+                                                    <button class="count-minus">-</button>
+                                                    <span class="product-count">1</span>
+                                                    <button class="count-add">+</button>
+                                                </div>
+                                            </div>
+                                            <button onclick="removeProduct(this)" class="btn  product-remove">
+                                                <i class="fa-solid fa-trash"></i>
+                                                remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- each prodcut in cart -->
+                                <div class="cart-product">
+                                    <div class="cart-media">
+                                        <img src="img/collection/boy.png" width="100px" height="100px" alt="product">
+                                    </div>
+                                    <div class="cart-product-info">
+                                        <div class="price">
+                                            <h5 class="product-title"><a href="product.html">Boys T shirt Large</a></h5>
+                                            <div class="product-price">₹10.00</div>
+                                        </div>
+                                        <div class="cart-product-actions">
+                                            <div>
+                                                <div class="count-selector">
+                                                    <button class="count-minus">-</button>
+                                                    <span class="product-count">1</span>
+                                                    <button class="count-add">+</button>
+                                                </div>
+                                            </div>
+                                            <button onclick="removeProduct(this)" class="btn  product-remove">
+                                                <i class="fa-solid fa-trash"></i>
+                                                remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- each prodcut in cart -->
+                                <div class="cart-product">
+                                    <div class="cart-media">
+                                        <img src="img/collection/boy.png" width="100px" height="100px" alt="product">
+                                    </div>
+                                    <div class="cart-product-info">
+                                        <div class="price">
+                                            <h5 class="product-title"><a href="product.html">Boys T shirt Large</a></h5>
+                                            <div class="product-price">₹10.00</div>
+                                        </div>
+                                        <div class="cart-product-actions">
+                                            <div>
+                                                <div class="count-selector">
+                                                    <button class="count-minus">-</button>
+                                                    <span class="product-count">1</span>
+                                                    <button class="count-add">+</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-remove">
+                                                <i class="fa-solid fa-trash"></i>
+                                                remove
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- each prodcut in cart -->
+                                <div class="cart-product">
+                                    <div class="cart-media">
+                                        <img src="img/collection/boy.png" width="100px" height="100px" alt="product">
+                                    </div>
+                                    <div class="cart-product-info">
+                                        <div class="price">
+                                            <h5 class="product-title"><a href="product.html">Boys T shirt Large</a></h5>
+                                            <div class="product-price">₹10.00</div>
+                                        </div>
+                                        <div class="cart-product-actions">
+                                            <div>
+                                                <div class="count-selector">
+                                                    <button class="count-minus">-</button>
+                                                    <span class="product-count">1</span>
+                                                    <button class="count-add">+</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-remove">
+                                                <i class="fa-solid fa-trash"></i>
+                                                remove
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- each prodcut in cart -->
+                                <div class="cart-product">
+                                    <div class="cart-media">
+                                        <img src="img/collection/boy.png" width="100px" height="100px" alt="product">
+                                    </div>
+                                    <div class="cart-product-info">
+                                        <div class="price">
+                                            <h5 class="product-title"><a href="product.html">Boys T shirt Large</a></h5>
+                                            <div class="product-price">₹10.00</div>
+                                        </div>
+                                        <div class="cart-product-actions">
+                                            <div>
+                                                <div class="count-selector">
+                                                    <button class="count-minus">-</button>
+                                                    <span class="product-count">1</span>
+                                                    <button class="count-add">+</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-remove">
+                                                <i class="fa-solid fa-trash"></i>
+                                                remove
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="cart-summary">
+                                <h5>Cart Summary</h5>
+                                <div class="total-items">
+                                    <span>Total Items</span>
+                                    <span>2</span>
+                                </div>
+                                <div class="total-price">
+                                    <span>Total Price</span>
+                                    <span>₹20.00</span>
+                                </div>
+                                <div class="checkout text-center">
+                                    <a href="checkout.html" class="">Buy Now</a>
+                                </div>
+                            </div>         
+                        </div>
+                    </div>
+                </div>
+
+                <!-- empty cart -->
+                <div class="empty-cart">
+                    <div class="empty-cart-content">
+                        <div class="empty-cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <h5>cart empty</h5>
+                        <p>your cart is empty</p>
+                        <a href="index.html" class="btn">continue shopping</a>
+                    </div>
+                </div>  
+
+
+            </div>
+        </section>
+
         
-        <footer>
+        <footer class="ftr-margin">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-xs-12">
@@ -169,6 +294,28 @@
                 </div>
             </div>
         </footer>
+
+
+
+
+
+        <!-- do you want to empty cart confirmation modal -->
+         <div class="modal-empty-cart">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Empty Cart?</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to empty your cart?</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-cancel" onclick="closeModal()">Cancel</button>
+                    <button class="btn btn-empty-cart" onclick="clearCart()">Empty Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        
     
     
         <!-- loading screen -->
