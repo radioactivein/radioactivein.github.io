@@ -154,181 +154,241 @@
         <div class="collection mt-2">
             <div class="container">
                 <h2>Collection Products</h2>
+                <hr>
+                <div class="row g-2">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="sort-filter">
+                            <!-- filter checkboxes -->
+                            <div class="clear-filter">
+                                <h5>Filter</h5>
+                                <button class="btn btn-filter" onclick="clearFilter()">
+                                    <i class="fa-solid fa-xmark"></i>
+                                    clear</button>
+                            </div>
+                            <hr>
 
-                <div class="sort-filter">
-                    <div class="sort">
-                        <select name="sort" id="sort">
-                            <option value="">Sort by</option>
-                            <option value="">Lowest Price</option>
-                            <option value="">Highest Price</option>
-                            <option value="">Newest</option>
-                            <option value="">Oldest</option>
-                        </select>
+                            <!-- collapsable filter -->
+                            <div class="collapsable">
+                                <h6>Category <i class="fa-solid fa-chevron-down"></i></h6>
+                                <div class="filter-box">
+                                    <div class="filter">
+                                        <input type="checkbox" id="filter-1">
+                                        <label for="filter-1">Filter 1</label>
+                                    </div>  
+                                    <div class="filter">
+                                        <input type="checkbox" id="filter-2">
+                                        <label for="filter-2">Filter 2</label>
+                                    </div>
+                                    <div class="filter">
+                                        <input type="checkbox" id="filter-3">
+                                        <label for="filter-3">Filter 3</label>
+                                    </div>
+                                    <div class="filter">
+                                        <input type="checkbox" id="filter-4">
+                                        <label for="filter-4">Filter 4</label>
+                                    </div>
+                                    <div class="filter">
+                                        <input type="checkbox" id="filter-5">
+                                        <label for="filter-5">Filter 5</label>
+                                    </div>
+                                </div>
+                            </div> 
+                            <hr class="">
+                            <div class="collapsable">
+                                <h6>Type <i class="fa-solid fa-chevron-down"></i></h6>
+                                <div class="filter-box">
+                                    <div class="filter">
+                                        <input type="checkbox" id="filter-1">
+                                        <label for="filter-1">type 1</label>
+                                    </div>  
+                                    <div class="filter">
+                                        <input type="checkbox" id="filter-2">
+                                        <label for="filter-2">type 2</label>
+                                    </div>
+                                    <div class="filter">
+                                        <input type="checkbox" id="filter-3">
+                                        <label for="filter-3">type 3</label>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            
+                            <!-- <div class="sort">
+                                <select name="sort" id="sort">
+                                    <option value="">Sort by</option>
+                                    <option value="">Lowest Price</option>
+                                    <option value="">Highest Price</option>
+                                    <option value="">Newest</option>
+                                    <option value="">Oldest</option>
+                                </select>
+                            </div>
+                            <div class="filter">
+                                <select name="filter" id="filter">
+                                    <option value="">Filter by</option>
+                                    <option value="">Lowest Price</option>
+                                    <option value="">Highest Price</option>
+                                    <option value="">Newest</option>
+                                    <option value="">Oldest</option>
+                                </select>
+                            </div> -->
+                        </div>
                     </div>
-                    <div class="filter">
-                        <select name="filter" id="filter">
-                            <option value="">Filter by</option>
-                            <option value="">Lowest Price</option>
-                            <option value="">Highest Price</option>
-                            <option value="">Newest</option>
-                            <option value="">Oldest</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="featured-products">
-                    <div class="row g-3">
-    
-                        <!-- product box -->
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 col-6">
-                            <div class="product">
-                                <a class="product-link" href="product.html">
-                                    <!-- product image -->
-                                    <div class="product-img">
-                                        <img src="img/nature.jpg" class="img-fluid" alt="">
-                                    </div>
-                                </a>
-                                    <!-- product info -->
-                                    <a href="#" class="product-content">
-                                        <p class="name">Product name</p>
-                                        <p class="description">Product description</p>
-                                        <div class="product-price">
-                                            <div class="strike-price"><span>₹</span>449</div>
-                                            <div class="price"><span>₹</span>399</div>
-                                        </div>
-                                    </a>
-
-                                    <!-- save products -->
-                                    <div class="product-icons">
-                                        <a href="#">
-                                            <!-- not liked -->
-                                            <i class="fa-regular fa-heart"></i>
-    
-                                            <!-- liked -->
-                                            <!-- <i class="fa-solid fa-heart"></i> -->
+                    <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+                        <div class="featured-products">
+                            <div class="row g-2">
+            
+                                <!-- product box -->
+                                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="product">
+                                        <a class="product-link" href="product.html">
+                                            <!-- product image -->
+                                            <div class="product-img">
+                                                <img src="img/nature.jpg" class="img-fluid" alt="">
+                                            </div>
                                         </a>
-                                        <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
+                                            <!-- product info -->
+                                            <a href="#" class="product-content">
+                                                <p class="name">Product name</p>
+                                                <p class="description">Product description</p>
+                                                <div class="product-price">
+                                                    <div class="strike-price"><span>₹</span>449</div>
+                                                    <div class="price"><span>₹</span>399</div>
+                                                </div>
+                                            </a>
+        
+                                            <!-- save products -->
+                                            <div class="product-icons">
+                                                <a href="#">
+                                                    <!-- not liked -->
+                                                    <i class="fa-regular fa-heart"></i>
+            
+                                                    <!-- liked -->
+                                                    <!-- <i class="fa-solid fa-heart"></i> -->
+                                                </a>
+                                                <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
+                                            </div>
+                                        <!-- </a> -->
+                                        <!-- buy button -->
+                                        <a href="#" class="product-btn mt-2">
+                                            Buy Now
+                                        </a>
                                     </div>
-                                <!-- </a> -->
-                                <!-- buy button -->
-                                <a href="#" class="product-btn mt-2">
-                                    Buy Now
-                                </a>
+                                </div>
+            
+                                <!-- product box -->
+                                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="product">
+                                        <a class="product-link" href="product.html">
+                                            <!-- product image -->
+                                            <div class="product-img">
+                                                <img src="img/nature.jpg" class="img-fluid" alt="">
+                                            </div>
+                                        </a>
+                                            <!-- product info -->
+                                            <a href="#" class="product-content">
+                                                <p class="name">Product name</p>
+                                                <p class="description">Product description</p>
+                                                <div class="product-price">
+                                                    <div class="strike-price"><span>₹</span>449</div>
+                                                    <div class="price"><span>₹</span>399</div>
+                                                </div>
+                                            </a>
+            
+                                            <!-- save products -->
+                                            <div class="product-icons">
+                                                <a href="#">
+                                                    <!-- not liked -->
+                                                    <i class="fa-regular fa-heart"></i>
+            
+                                                    <!-- liked -->
+                                                    <!-- <i class="fa-solid fa-heart"></i> -->
+                                                </a>
+                                                <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
+                                            </div>
+                                        <!-- </a> -->
+                                        <!-- buy button -->
+                                        <a href="#" class="product-btn mt-2">
+                                            Buy Now
+                                        </a>
+                                    </div>
+                                </div>
+            
+                                <!-- product box -->
+                                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="product">
+                                        <a class="product-link" href="product.html">
+                                            <!-- product image -->
+                                            <div class="product-img">
+                                                <img src="img/nature.jpg" class="img-fluid" alt="">
+                                            </div>
+                                        </a>
+                                            <!-- product info -->
+                                            <a href="#" class="product-content">
+                                                <p class="name">Product name</p>
+                                                <p class="description">Product description</p>
+                                                <div class="product-price">
+                                                    <div class="strike-price"><span>₹</span>449</div>
+                                                    <div class="price"><span>₹</span>399</div>
+                                                </div>
+                                            </a>
+                                            <!-- save products -->
+                                            <div class="product-icons">
+                                                <a href="#">
+                                                    <!-- not liked -->
+                                                    <i class="fa-regular fa-heart"></i>
+            
+                                                    <!-- liked -->
+                                                    <!-- <i class="fa-solid fa-heart"></i> -->
+                                                </a>
+                                                <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
+                                            </div>
+                                        <!-- </a> -->
+                                        <!-- buy button -->
+                                        <a href="#" class="product-btn mt-2">
+                                            Buy Now
+                                        </a>
+                                    </div>
+                                </div>
+            
+                                <!-- product box -->
+                                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="product">
+                                        <a class="product-link" href="product.html">
+                                            <!-- product image -->
+                                            <div class="product-img">
+                                                <img src="img/nature.jpg" class="img-fluid" alt="">
+                                            </div>
+                                        </a>
+                                            <!-- product info -->
+                                            <a href="#" class="product-content">
+                                                <p class="name">Product name</p>
+                                                <p class="description">Product description</p>
+                                                <div class="product-price">
+                                                    <div class="strike-price"><span>₹</span>449</div>
+                                                    <div class="price"><span>₹</span>399</div>
+                                                </div>
+                                            </a>
+                                            <!-- save products -->
+                                            <div class="product-icons">
+                                                <a href="#">
+                                                    <!-- not liked -->
+                                                    <i class="fa-regular fa-heart"></i>
+            
+                                                    <!-- liked -->
+                                                    <!-- <i class="fa-solid fa-heart"></i> -->
+                                                </a>
+                                                <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
+                                            </div>
+                                        <!-- </a> -->
+                                        <!-- buy button -->
+                                        <a href="#" class="product-btn mt-2">
+                                            Buy Now
+                                        </a>
+                                    </div>
+                                </div>
+            
                             </div>
                         </div>
-    
-                        <!-- product box -->
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 col-6">
-                            <div class="product">
-                                <a class="product-link" href="product.html">
-                                    <!-- product image -->
-                                    <div class="product-img">
-                                        <img src="img/nature.jpg" class="img-fluid" alt="">
-                                    </div>
-                                </a>
-                                    <!-- product info -->
-                                    <a href="#" class="product-content">
-                                        <p class="name">Product name</p>
-                                        <p class="description">Product description</p>
-                                        <div class="product-price">
-                                            <div class="strike-price"><span>₹</span>449</div>
-                                            <div class="price"><span>₹</span>399</div>
-                                        </div>
-                                    </a>
-    
-                                    <!-- save products -->
-                                    <div class="product-icons">
-                                        <a href="#">
-                                            <!-- not liked -->
-                                            <i class="fa-regular fa-heart"></i>
-    
-                                            <!-- liked -->
-                                            <!-- <i class="fa-solid fa-heart"></i> -->
-                                        </a>
-                                        <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
-                                    </div>
-                                <!-- </a> -->
-                                <!-- buy button -->
-                                <a href="#" class="product-btn mt-2">
-                                    Buy Now
-                                </a>
-                            </div>
-                        </div>
-    
-                        <!-- product box -->
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 col-6">
-                            <div class="product">
-                                <a class="product-link" href="product.html">
-                                    <!-- product image -->
-                                    <div class="product-img">
-                                        <img src="img/nature.jpg" class="img-fluid" alt="">
-                                    </div>
-                                </a>
-                                    <!-- product info -->
-                                    <a href="#" class="product-content">
-                                        <p class="name">Product name</p>
-                                        <p class="description">Product description</p>
-                                        <div class="product-price">
-                                            <div class="strike-price"><span>₹</span>449</div>
-                                            <div class="price"><span>₹</span>399</div>
-                                        </div>
-                                    </a>
-                                    <!-- save products -->
-                                    <div class="product-icons">
-                                        <a href="#">
-                                            <!-- not liked -->
-                                            <i class="fa-regular fa-heart"></i>
-    
-                                            <!-- liked -->
-                                            <!-- <i class="fa-solid fa-heart"></i> -->
-                                        </a>
-                                        <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
-                                    </div>
-                                <!-- </a> -->
-                                <!-- buy button -->
-                                <a href="#" class="product-btn mt-2">
-                                    Buy Now
-                                </a>
-                            </div>
-                        </div>
-    
-                        <!-- product box -->
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 col-6">
-                            <div class="product">
-                                <a class="product-link" href="product.html">
-                                    <!-- product image -->
-                                    <div class="product-img">
-                                        <img src="img/nature.jpg" class="img-fluid" alt="">
-                                    </div>
-                                </a>
-                                    <!-- product info -->
-                                    <a href="#" class="product-content">
-                                        <p class="name">Product name</p>
-                                        <p class="description">Product description</p>
-                                        <div class="product-price">
-                                            <div class="strike-price"><span>₹</span>449</div>
-                                            <div class="price"><span>₹</span>399</div>
-                                        </div>
-                                    </a>
-                                    <!-- save products -->
-                                    <div class="product-icons">
-                                        <a href="#">
-                                            <!-- not liked -->
-                                            <i class="fa-regular fa-heart"></i>
-    
-                                            <!-- liked -->
-                                            <!-- <i class="fa-solid fa-heart"></i> -->
-                                        </a>
-                                        <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
-                                    </div>
-                                <!-- </a> -->
-                                <!-- buy button -->
-                                <a href="#" class="product-btn mt-2">
-                                    Buy Now
-                                </a>
-                            </div>
-                        </div>
-    
                     </div>
                 </div>
             </div>

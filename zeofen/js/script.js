@@ -76,36 +76,98 @@ $(window).on('load', function () {
         $('.selected-size').text($(this).text());
     });
 
-    // count Selection
-    $('.count-minus').on('click',function(){
-        var count = $(this).siblings('.product-count').text();
-        if(count > 1){
+    let interval; // for holding
+let holdDelay = 150; // speed for hold
+
+// Decrease
+$('.count-minus')
+.on('click', function() {
+    let $countElem = $(this).siblings('.product-count');
+    let count = parseInt($countElem.text());
+    if (count > 1) {
+        count--;
+        $countElem.text(count);
+    }
+})
+.on('mousedown touchstart', function(e) {
+    e.preventDefault(); // prevent mobile double-trigger
+    let $countElem = $(this).siblings('.product-count');
+    interval = setInterval(() => {
+        let count = parseInt($countElem.text());
+        if (count > 1) {
             count--;
-            $(this).siblings('.product-count').text(count);
+            $countElem.text(count);
         }
-    });
-    $('.count-add').on('click',function(){
-        var count = $(this).siblings('.product-count').text();
+    }, holdDelay);
+})
+.on('mouseup mouseleave touchend', function() {
+    clearInterval(interval);
+});
+
+// Increase
+$('.count-add')
+.on('click', function() {
+    let $countElem = $(this).siblings('.product-count');
+    let count = parseInt($countElem.text());
+    count++;
+    $countElem.text(count);
+})
+.on('mousedown touchstart', function(e) {
+    e.preventDefault();
+    let $countElem = $(this).siblings('.product-count');
+    interval = setInterval(() => {
+        let count = parseInt($countElem.text());
         count++;
-        $(this).siblings('.product-count').text(count);
-    });
+        $countElem.text(count);
+    }, holdDelay);
+})
+.on('mouseup mouseleave touchend', function() {
+    clearInterval(interval);
+});
+
+
 
     // })
 
+    // coupon
+   $('#checkout .coupon').on('click',function(){
+    var couponCode = $('#checkout .coupon-input').val().trim(); // remove spaces
+    if(couponCode === ''){
+        console.log('coupon not applied');
+    }else{
+        $('.coupon-applied').css('display','flex').fadeIn(300);
+        console.log('coupon applied');
+    }
+   })
+
+    function removeCoupon(){
+        $('.coupon-applied').css('display','none').fadeOut(300);
+        $('.coupon-input').val('');
+    }
 
 
 
     // removeProduct
-    function removeProduct(element){
+    function removeProduct(element) {
         $(element).closest('.cart-product').remove();
+    
+        // Check if there are NO cart-product elements left
+        if ($('.cart-products').children('.cart-product').length === 0) {
+            $('.empty-cart').css('display','flex').fadeIn(300);
+            $('.btn.btn-clear-cart').hide();
+            $('.cart-summary').hide();
+        } else {
+            $('.empty-cart').css('display','none');
+            $('.btn.btn-clear-cart').show();
+            $('.cart-summary').show();
+        }
     }
-
-
     // clearCart
     function clearCart(){
         $('.cart-products').empty(); // remove cart items
         $('.cart-summary').empty(); // remove cart summary
-        $('.empty-cart').fadeIn(300); //empty state
+        $('.empty-cart').css('display','flex').fadeIn(300); //empty state
+        $('.btn.btn-clear-cart').hide();//hide remove button
         closeModal();
     }
 
@@ -116,6 +178,24 @@ $(window).on('load', function () {
         $('.modal-empty-cart').removeClass('clicked').fadeOut(300);
     }
 
+    // checkout
+    $('#checkout .collapse-label').on('click', function() {
+        $(this).closest('.collapseble')
+               .find('.collapse-data')
+               .slideToggle(300);
+    
+        let $icon = $(this).find('.fa-chevron-up, .fa-chevron-down');
+        $icon.toggleClass('fa-chevron-up fa-chevron-down');
+    });
+
+
+    
+    
+
+    
+
+
+    
 
     // Login Form
     // toggle password
@@ -162,6 +242,17 @@ $(window).on('load', function () {
         }
     })
 
+
+    // collapsable
+    $('.collapsable h6').on('click',function(){
+        $(this).closest('.collapsable').toggleClass('active');
+        // $(this).find('i').toggleClass('fa-chevron-down fa-chevron-up');
+    });
+
+    function clearFilter(){
+        $('.filter-box').find('input').prop('checked', false);
+        toast('Filter cleared', 'success');
+    }
 
 
  // carousals

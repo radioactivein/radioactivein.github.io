@@ -18,10 +18,11 @@
         <header>
             <div class="container">
                 <div class="header-cnt">
-                    <div class="logo">
+                    <div class="logo d-flex align-items-center justify-content-center gap-2">
                         <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+                        <span>|</span>
+                        <a href="cart.html">Cart</a>
                     </div>
-    
     
                     <div class="others">
                         <!-- drop down menu -->
@@ -100,16 +101,22 @@
 
         <section id="cart">
             <div class="container">
-                <div class="cart-header">
-                    <h1>Cart</h1>
-                    <button onclick="openModal()">
+                <!-- <div class="cart-header">
+                    <button class="btn btn-clear-cart" onclick="openModal()">
                         <i class="fa-solid fa-trash"></i>
                         Clear</button>
                 </div>
-                <hr>
+                <hr> -->
                 <div class="cart-cnt">
                     <div class="row g-2">
                         <div class="col-md-8 col-sm-12">
+                            <div class="cart-header">
+                                <a href="cart.html"><i class="fa-solid fa-arrow-left"></i>Back</a>
+                                <button class="btn btn-clear-cart" onclick="openModal()">
+                                    <i class="fa-solid fa-trash"></i>
+                                    Clear</button>
+                            </div>
+                            
                             <div class="cart-products">
                                 <!-- each prodcut in cart -->
                                 <div class="cart-product">
@@ -124,9 +131,9 @@
                                         <div class="cart-product-actions">
                                             <div>
                                                 <div class="count-selector">
-                                                    <button class="count-minus">-</button>
+                                                    <button class="count-minus"><i class="fa-solid fa-minus"></i></button>
                                                     <span class="product-count">1</span>
-                                                    <button class="count-add">+</button>
+                                                    <button class="count-add"><i class="fa-solid fa-plus"></i></button>
                                                 </div>
                                             </div>
                                             <button onclick="removeProduct(this)" class="btn  product-remove">
@@ -149,9 +156,9 @@
                                         <div class="cart-product-actions">
                                             <div>
                                                 <div class="count-selector">
-                                                    <button class="count-minus">-</button>
+                                                    <button class="count-minus"><i class="fa-solid fa-minus"></i></button>
                                                     <span class="product-count">1</span>
-                                                    <button class="count-add">+</button>
+                                                    <button class="count-add"><i class="fa-solid fa-plus"></i></button>
                                                 </div>
                                             </div>
                                             <button onclick="removeProduct(this)" class="btn  product-remove">
@@ -161,6 +168,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <!-- each prodcut in cart -->
                                 <div class="cart-product">
                                     <div class="cart-media">
@@ -174,12 +182,12 @@
                                         <div class="cart-product-actions">
                                             <div>
                                                 <div class="count-selector">
-                                                    <button class="count-minus">-</button>
+                                                    <button class="count-minus"><i class="fa-solid fa-minus"></i></button>
                                                     <span class="product-count">1</span>
-                                                    <button class="count-add">+</button>
+                                                    <button class="count-add"><i class="fa-solid fa-plus"></i></button>
                                                 </div>
                                             </div>
-                                            <div class="product-remove">
+                                            <div class="product-remove" onclick="removeProduct(this)">
                                                 <i class="fa-solid fa-trash"></i>
                                                 remove
                                             </div>
@@ -199,12 +207,12 @@
                                         <div class="cart-product-actions">
                                             <div>
                                                 <div class="count-selector">
-                                                    <button class="count-minus">-</button>
+                                                    <button class="count-minus"><i class="fa-solid fa-minus"></i></button>
                                                     <span class="product-count">1</span>
-                                                    <button class="count-add">+</button>
+                                                    <button class="count-add"><i class="fa-solid fa-plus"></i></button>
                                                 </div>
                                             </div>
-                                            <div class="product-remove">
+                                            <div class="product-remove" onclick="removeProduct(this)">
                                                 <i class="fa-solid fa-trash"></i>
                                                 remove
                                             </div>
@@ -224,12 +232,12 @@
                                         <div class="cart-product-actions">
                                             <div>
                                                 <div class="count-selector">
-                                                    <button class="count-minus">-</button>
+                                                    <button class="count-minus"><i class="fa-solid fa-minus"></i></button>
                                                     <span class="product-count">1</span>
-                                                    <button class="count-add">+</button>
+                                                    <button class="count-add"><i class="fa-solid fa-plus"></i></button>
                                                 </div>
                                             </div>
-                                            <div class="product-remove">
+                                            <div class="product-remove" onclick="removeProduct(this)">
                                                 <i class="fa-solid fa-trash"></i>
                                                 remove
                                             </div>
@@ -250,7 +258,7 @@
                                     <span>₹20.00</span>
                                 </div>
                                 <div class="checkout text-center">
-                                    <a href="checkout.html" class="">Buy Now</a>
+                                    <a href="checkout.html" class="">checkout</a>
                                 </div>
                             </div>         
                         </div>
