@@ -323,13 +323,22 @@ a.active{
     padding-top: 50px;
   }
 }
+.hero-text .fw-normal{
+    font-size: 17px;
+    margin: 0;
+}
 .hero-text p {
-  font-size: 3rem;
-  padding: 0.5rem;
-  font-weight: normal;
-  line-height: 1.5;
-  text-align: left;
-  overflow: hidden;
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: left;
+    overflow: hidden;
+    margin: 0;
+    margin-top: -10px;
+}
+.hero-text p:first-child{
+    font-weight: 800;
 }
 .hero-text p span.typed-text {
   font-weight: normal;
