@@ -167,6 +167,9 @@ function loadScript() {
   var progress1 = 0.1 //css
   $('#progress1').find('#blue').animate({'stroke-dashoffset': 198 * progress1}, 3300);
 
+  var progress11 = 0.1 //css
+  $('#progress1').find('#blue').animate({'stroke-dashoffset': 198 * progress1}, 3300);
+
   var progress1 = 0.5 //js
   $('#progress2').find('#blue').animate({'stroke-dashoffset': 198 * progress1}, 2600);
 
